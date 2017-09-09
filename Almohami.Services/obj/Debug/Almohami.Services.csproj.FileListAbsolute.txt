@@ -154,3 +154,17 @@ G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services
 G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\obj\Debug\ar\Almohami.Services.resources.dll
 G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
 G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\bin\Debug\Almohami.Services.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\bin\Debug\Almohami.Services.pdb
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\bin\Debug\ar\Almohami.Services.resources.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\bin\Debug\Almohami.Core.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\bin\Debug\Almohami.Data.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\bin\Debug\Almohami.Core.pdb
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\bin\Debug\Almohami.Data.pdb
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.resources
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.ar.resources
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\obj\Debug\Almohami.Services.csproj.GenerateResource.Cache
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\obj\Debug\ar\Almohami.Services.resources.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\obj\Debug\Almohami.Services.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami\Almohami.Services\obj\Debug\Almohami.Services.pdb
