@@ -1,0 +1,202 @@
+﻿@model Almohami.Services.Entities.SecurityRolePermissionEntityModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Index";
+}
+
+
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+
+<h2>Role List</h2>
+<button class="btn btn-primary btn-lg" data-toggle="modal" id="addRolebtn" onclick="addRoleMethod()">
+    Add Role
+</button>
+@Html.Hidden("hdnDeletedRoleId")
+<div class="container">
+    <table id="roleList" class="table table-striped table-bordered nowrap" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Role Name</th>
+                <th>Role Description</th>
+                <th>IsActive</th>
+                <th>Action</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (Model.SecurityRoleList.Count() > 0)
+            {
+                foreach (var roleItem in Model.SecurityRoleList)
+                {
+                    <tr>
+                        <td>@roleItem.RoleName</td>
+                        <td>@roleItem.RoleDescription</td>
+                        <td>@roleItem.IsActive</td>
+                        <td><a href="#" onclick="editRoleMethod(@roleItem.SecurityRoleId)">Edit</a>&nbsp;<a>Permission</a>&nbsp;<a href="#" onclick="deleteRoleMethod(@roleItem.SecurityRoleId)">Delete</a></td>
+                    </tr>
+                }
+            }
+
+
+        </tbody>
+    </table>
+</div>
+
+<div id="modalAddRole">
+
+</div>
+<div id="modalEditRole">
+
+</div>
+<div class="modal fade" id="deleteRoleModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Delete Role
+                </h4>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+
+                <form class="form-horizontal" role="form">
+                    <div>Are you sure you want to delete this role?</div>
+                </form>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                    Close
+                </button>
+                <button onclick="DeleteRole()" type="button" class="btn btn-primary">
+                    Delete
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        var table = $('#roleList').DataTable({
+            responsive: true
+        });
+    });
+
+    var addRoleUrl = '@Url.Content("~/SecurityRolePermission/AddRole/")';
+
+    function addRoleMethod() {
+        $.ajax({
+            url: '/SecurityRolePermission/AddRole',
+            success: function (data) {
+                $('#modalAddRole').html(data);
+                $('#addRoleModal').modal('show');
+
+            }
+        });
+    }
+
+    function editRoleMethod(roleid) {
+        $.ajax({
+            url: '/SecurityRolePermission/EditRole?roleId='+roleid+'',
+            success: function (data) {
+                $('#modalEditRole').html(data);
+                $('#editRoleModal').modal('show');
+
+            }
+        });
+    }
+
+    function deleteRoleMethod(roleid) {
+        $("#hdnDeletedRoleId").val(roleid);
+        $("#deleteRoleModal").modal('show');
+    }
+    $(document).on('click', "#btnSaveRole", function () {
+        SaveNewRole();
+    });
+
+    function SaveNewRole() {
+
+        var form = $("#addroleForm").serialize()
+
+        //if (form.valid()) {
+        $.ajax({
+            type: 'POST',
+            url: addRoleUrl,
+            data: form,
+            datatype: "json",
+            async: false,
+            contenttype: 'application/json; charset=utf-8',
+            success: function (data) {
+
+                if (data.success) {
+                    $("#addRoleModal").modal('hide');
+                    window.location.reload();
+                }
+
+            },
+            error: function () {
+
+            }
+        });
+        return false;
+    }
+    //}
+
+    
+    function UpdateRole() {
+
+        var form = $("#updateroleForm").serialize()
+
+        //if (form.valid()) {
+        $.ajax({
+            type: 'POST',
+            url: addRoleUrl,
+            data: form,
+            datatype: "json",
+            async: false,
+            contenttype: 'application/json; charset=utf-8',
+            success: function (data) {
+
+                if (data.success) {
+                    $("#editRoleModal").modal('hide');
+                    window.location.reload();
+
+                }
+
+            },
+            error: function () {
+
+            }
+        });
+        return false;
+    }
+    //}
+    function DeleteRole() {
+
+        var roleId=$("#hdnDeletedRoleId").val();
+
+        $.ajax({
+            url: '/SecurityRolePermission/DeleteRole?roleId='+roleId+'',
+            success: function (data) {
+                $("#deleteRoleModal").modal('hide');
+                window.location.reload();
+            }
+        });
+    }
+</script>
+

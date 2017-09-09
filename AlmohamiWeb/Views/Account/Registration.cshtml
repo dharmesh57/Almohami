@@ -1,0 +1,183 @@
+﻿@model Almohami.Services.Entities.RegisterModel
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" dir="rtl">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>User Panel | User Registration</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="User Account Page" name="description" />
+    <meta content="" name="author" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    @Styles.Render("~/Content/GlobalPlugins")
+    @Styles.Render("~/Content/GlobalCss")
+    <link href="~/Content/Plugins/loader/jquery.loader.css" rel="stylesheet" />
+    <link href="~/Content/custom.css" rel="stylesheet" />
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link href="~/Content/components-rtl.min.css" rel="stylesheet" />
+    <link href="~/Content/login-5-rtl.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="~/favicon.ico" />
+
+</head>
+<!-- END HEAD -->
+
+<body class="login customloader">
+    <!-- BEGIN : LOGIN PAGE 5-1 -->
+    <div class="user-login-5">
+        <div class="row bs-reset">
+            <div class="col-md-6 bs-reset mt-login-5-bsfix">
+                <div class="login-bg" style="background-image: url('../../Content/Img/login/bg1.jpg');">
+                    <a href="index.html">
+                        <img src="~/Content/Img/logo.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 login-container bs-reset mt-login-5-bsfix">
+                <div class="login-content">
+                    <h1>Sign Up</h1>
+                    @using (Html.BeginForm("Registration", "Account", FormMethod.Post, new { @class = "login-form form-horizontal", @id = "addUser" }))
+                    {<div class="row">
+                        <div class="col-md-12">
+                            @if (TempData["SuccessMessage"] != null)
+                            {
+                                <div id="successdiv" class="alert alert-success alert-dismissible note note-success">
+                                    <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                    <h4><i class="icon fa fa-thumbs-up"></i> success!</h4>
+                                    <span id="successmes">  @TempData["SuccessMessage"]</span>
+
+                                </div>
+                            }
+                            else if (TempData["ErrorMessage"] != null)
+                            {
+                                <div id="errordiv" class="alert alert-danger  alert-dismissible">
+                                    <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                    <h4><i class="icon fa fa-ban"></i>Error!</h4>
+                                    <span id="errormes"> @TempData["ErrorMessage"] </span>
+
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                @Html.TextBoxFor(a => a.Name, new { @class = "form-control form-control-solid placeholder-no-fix form-group", @placeholder = "Full Name" })
+                                @Html.ValidationMessageFor(Model => Model.Name)
+                            </div>
+                            <div class="col-xs-6">
+                                @Html.TextBoxFor(a => a.Company, new { @class = "form-control form-control-solid placeholder-no-fix form-group", @placeholder = "Company Name" })
+                                @Html.ValidationMessageFor(Model => Model.Company)
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                @Html.TextBoxFor(a => a.MobileNo, new { @class = "form-control form-control-solid placeholder-no-fix form-group", @placeholder = "Mobile No" })
+                                @Html.ValidationMessageFor(Model => Model.MobileNo)
+                            </div>
+                            <div class="col-xs-6">
+                                @Html.TextBoxFor(a => a.Email, new { @class = "form-control form-control-solid placeholder-no-fix form-group", @placeholder = "Email Id" })
+                                @Html.ValidationMessageFor(Model => Model.Email)
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 password-strength">
+                                @Html.PasswordFor(a => a.Password, new { @class = "form-control form-control-solid placeholder-no-fix form-group", @placeholder = "Password", @id = "password_strength" })
+                                <span class="help-block">Password Strength </span>
+                                @Html.ValidationMessageFor(Model => Model.Password)
+
+                            </div>
+                            <div class="col-xs-6">
+                                @Html.PasswordFor(a => a.ConfirmPassword, new { @class = "form-control form-control-solid placeholder-no-fix form-group", @placeholder = "Retype Password" })
+                                @Html.ValidationMessageFor(Model => Model.ConfirmPassword)
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="rem-password">
+                                    @Html.ActionLink("Already have an account?", "Login", "/Account/Login", new { @class = "uppercase" })
+                                </div>
+                            </div>
+                            <div class="col-sm-8 text-right">
+                                <div class="forgot-password">
+                                    <a href="javascript:;" id="forget-password" class="forget-password">Forgot Password?</a>
+                                </div>
+                                <button id="registerBtn" type="button" class="btn btn-success uppercase pull-right">Sign In</button>
+                            </div>
+
+                        </div>
+
+                    }
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="modalSendOTP"></div>
+    <!-- END : LOGIN PAGE 5-1 -->
+    <!--[if lt IE 9]>
+    <script src="../assets/global/plugins/respond.min.js"></script>
+    <script src="../assets/global/plugins/excanvas.min.js"></script>
+    <script src="../assets/global/plugins/ie8.fix.min.js"></script>
+    <![endif]-->
+    <!-- BEGIN CORE PLUGINS -->
+    @Scripts.Render("~/Bundles/CorePlugins")
+    <script src="~/Scripts/pwstrength-bootstrap.min.js"></script>
+    @Scripts.Render("~/Bundles/GlobalScripts")
+    @Scripts.Render("~/bundles/jqueryval")
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    @*<script src="~/Scripts/login-5.min.js"></script>*@
+    <script src="~/Scripts/components-form-tools.min.js"></script>
+    @Scripts.Render("~/Content/Custom")
+    <script src="~/Content/Plugins/loader/jquery.loader.js"></script>
+    <script src="~/Content/Plugins/bootstrap-growl/jquery.bootstrap-growl.js"></script>
+    <script src="~/Content/Plugins/bootstrap-growl/ui-bootstrap-growl.js"></script>
+
+
+    <script>
+
+        $("#registerBtn").click(function () {
+
+            var form = $("#addUser").serialize();
+            showloader();
+            $.ajax({
+                type: 'POST',
+                url: "/Account/Registration/",
+                data: form,
+                datatype: "json",
+                async: false,
+                contenttype: 'application/json; charset=utf-8',
+                success: function (data) {
+                    hideloader();
+                    $('#modalSendOTP').html(data);
+                    $("#SendOTPModal").modal('show');
+
+                    if (data.success == false) {
+                        hideloader();
+                        toaster.danger("Email Id Already Exists!");
+
+                    }
+
+
+                },
+                error: function (xhr) {
+                    hideloader();
+                    GetValidationMsg(xhr);
+                }
+            });
+            return false;
+        })
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll.config
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.xml
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll.config
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.pdb
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.xml
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.pdb
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll.config
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.pdb
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.xml
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.csprojResolveAssemblyReference.cache
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.csprojResolveAssemblyReference.cache
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll.config
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.xml
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll.config
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.xml
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.csprojResolveAssemblyReference.cache
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll.config
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.xml
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll.config
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.xml
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.csprojResolveAssemblyReference.cache
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll.config
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.xml
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.csprojResolveAssemblyReference.cache
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll.config
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.xml
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll.config
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.xml
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.pdb
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll.config
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\Almohami.Data.pdb
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.xml
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\EntityFramework.SqlServer.xml
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.csprojResolveAssemblyReference.cache
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Data\obj\Debug\Almohami.Data.pdb

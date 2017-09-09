@@ -1,0 +1,159 @@
+﻿@model Almohami.Services.Entities.UserEntityModel
+@section Breadcrumbs
+        {
+    <!-- BEGIN PAGE BREADCRUMBS -->
+    <ul class="page-breadcrumb breadcrumb">
+        <li>
+            <a href="/Settings/PersonalInfo">
+                Settings
+            </a>
+            <i class="fa fa-circle"></i>
+        </li>
+
+        <li>
+            <span>PersonalInfo</span>
+        </li>
+    </ul>
+    <!-- END PAGE BREADCRUMBS -->
+    <!-- BEGIN PAGE CONTENT INNER -->
+}
+@using (Html.BeginForm("PersonalInfo", "Settings", FormMethod.Post, new { @id = "UpdatePersonalInfoForm", @enctype = "multipart/form-data", @class="form-horizontal"}))
+{
+    <link href="~/Content/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
+
+    <!-- BEGIN PAGE CONTENT BODY -->
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="portlet light ">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="fa fa-gears font-dark"></i>
+                        <span class="caption-subject font-dark sbold uppercase">Personal Settings</span>
+                    </div>
+                </div>
+                <div class="portlet-body form">               
+                        <div class="form-body">
+                            @Html.HiddenFor(m => m.UserID)
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.UserAvtar, new { @class = "col-md-3 control-label" })
+                                <div class="col-md-9">
+                                    <input type="hidden" id="isAttachmentChanged" name="isAttachmentChanged" value="false" />
+                                    <div class="fileinput fileinput-new" data-provides="fileinput">
+                                        <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                            @if (Model.UserAvtar != null)
+                                            {
+                                                <img src="~/Content/Img/UserImg/@Model.UserAvtar" />
+                                            }
+                                            else
+                                            {
+                                                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+                                            }
+                                        </div>
+                                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
+                                        <div>
+                                            <span class="btn green btn-file">
+                                                <span class="fileinput-new"><i class="fa fa-paperclip"></i>Select image </span>
+                                                <span class="fileinput-exists"><i class="fa fa-undo"></i>  Change </span>
+                                                @*<input type="file" class="default" name="attachment" id="attachment" accept="image/*">*@
+
+                                                
+                                                <input type="file" class="default" name="file" accept="image/*">
+                                            </span>
+                                            <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput"><i class="fa fa-trash-o"></i>  Remove </a>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix margin-top-10" id="NoteSave" style="display: none">
+                                        <span class="label label-danger">NOTE!</span>Your changes are not saved yet! Click "Save" at the bottom of the page.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Name, new { @class = "col-md-3 control-label" })
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-user"></i>
+                                        </span>
+                                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @placeholder = "Name" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Email, new { @class = "col-md-3 control-label" })
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email", @disabled = "disabled" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.MobileNo, new { @class = "col-md-3 control-label" })
+
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-phone"></i>
+                                        </span>
+                                        @Html.TextBoxFor(m => m.MobileNo, new { @class = "form-control", @placeholder = "MobileNo" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="submit" class="btn green"><i class="fa fa-check"></i> Submit</button>
+                                    <button type="button" class="btn default"><i class="fa fa-remove"></i> Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<script>
+    $(function () {
+        $(".fileinput fileinput-new").bind('Change', fileUploadChanged);
+        $(".fileinput fileinput-new").bind('Remove', fileUploadChanged);
+        $(".fileinput fileinput-new").bind('reset', fileUploadChanged);
+    });
+
+    function fileUploadChanged() {
+        $("#isAttachmentChanged").val(true);
+
+        if ($("#NoteSave").length > 0) {
+            $("#NoteSave").show();
+        }
+    }
+</script>
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+@*<script>
+    $(document).ready(function () {
+
+        $("#imageUploadForm").change(function () {
+         debugger
+         var totalfiles = document.getElementById("imageUploadForm").files;
+
+         
+         
+         $.ajax({
+             type: "POST",
+             url: '/Home/Upload',
+             data: totalfiles,
+             dataType: 'json',
+             contentType: false,
+             processData: false,
+             success: function (response) {
+                 alert('succes!!');
+             },
+             error: function (error) {
+                 alert("errror");
+             }
+         });
+     });
+ });</script>*@

@@ -1,0 +1,170 @@
+﻿@model Almohami.Services.Entities.AppointmentEntityModel
+
+
+
+<link href="~/Content/Plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" />
+<link href="~/Content/Plugins/bootstrap-timepicker/css/bootstrap-timepicker.css" rel="stylesheet" />
+
+
+<div class="modal fade" id="AddAppointmentModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                @using (Html.BeginForm("AddAppointment", "Case", FormMethod.Post, new { @id = "AddAppointmentForm", @class = "form-horizontal" }))
+                {
+                    <div class="row">
+                        <div class="col-md-12">
+                            @if (TempData["SuccessMessage"] != null)
+                            {
+                                <div id="successdiv" class="alert alert-success alert-dismissible note note-success">
+                                    <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                    <h4><i class="icon fa fa-thumbs-up"></i> success!</h4>
+                                    <span id="successmes">  @TempData["SuccessMessage"]</span>
+
+                                </div>
+                            }
+                            else if (TempData["ErrorMessage"] != null)
+                            {
+                                <div id="errordiv" class="alert alert-danger  alert-dismissible">
+                                    <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                    <h4><i class="icon fa fa-ban"></i>Error!</h4>
+                                    <span id="errormes"> @TempData["ErrorMessage"] </span>
+
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portlet">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="fa fa-folder font-dark"></i>
+                                        <span class="caption-subject font-dark sbold uppercase">Add Appointment</span>
+                                    </div>
+                                </div>
+                                <div class="portlet-body form">
+                                    <div class="form-horizontal">
+                                        <div class="col-md-12">
+                                            <div class="form-body section ">
+                                                @Html.HiddenFor(m => m.CaseAppointmentId)
+                                                @Html.HiddenFor(m => m.CaseId, new { id = "hdnCaseUpdateCaseId" })
+                                                <h4>ABOUT</h4>
+                                                <div class="form-group">
+                                                    @Html.LabelFor(m => m.CaseAppointmentTitle, new { @class = "control-label col-md-3" })
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-pencil"></i>
+                                                        </span>
+                                                        @Html.TextBoxFor(m => m.CaseAppointmentTitle, new { @class = "form-control input-medium" })
+                                                        @*@Html.ValidationMessageFor(m => m.CaseAppointmentTitle)*@
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    @Html.LabelFor(m => m.CaseAppointmentDate, new { @class = "control-label col-md-3" })
+                                                    <div class="input-group  date date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </span>
+                                                        @Html.TextBoxFor(m => m.CaseAppointmentDate, new { @class = "form-control input-medium" })
+                                                        @*@Html.ValidationMessageFor(m => m.CaseAppointmentDate)*@
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    @Html.LabelFor(m => m.CaseAppointmentTime, new { @class = "control-label col-md-3" })
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </span>
+                                                        @Html.TextBoxFor(m => m.CaseAppointmentTime, new { @class = "form-control timepicker timepicker-24 input-medium" })
+                                                        @*@Html.ValidationMessageFor(m => m.CaseAppointmentTime)*@
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    @Html.LabelFor(m => m.CaseAppointmentProgress, new { @class = "control-label col-md-3" })
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-houzz"></i>
+                                                        </span>
+                                                        @Html.EnumDropDownListFor(m => m.CaseAppointmentProgress, new { @class = "form-control input-medium" })
+                                                        @*@Html.ValidationMessageFor(m => m.CaseAppointmentProgress)*@
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    @Html.LabelFor(m => m.CaseAppointmentCategory, new { @class = "control-label col-md-3" })
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-list-alt"></i>
+                                                        </span>
+                                                        @Html.DropDownListFor(m => m.CaseAppointmentCategory, new SelectList(Model.AppointmentCategoryList, "AppointmentCategoryId", "AppointmentTitle"), "---Select Appointment---", new { @class = "form-control input-medium" })
+                                                        @*@Html.ValidationMessageFor(m => m.CaseAppointmentCategory)*@
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" class="btn red" data-dismiss="modal">
+                        <i class="fa fa-remove"></i> Cancel
+                    </button>
+                    <button type="button" class="btn green-meadow" onclick="SaveAppointment()">
+                        <i class="fa fa-check"></i> Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function SaveAppointment() {
+        debugger
+        //var form = $("#casedetails").serialize();
+        var form = $("#AddAppointmentForm").serialize();
+        
+        var id = $("#hdnCaseUpdateCaseId").val();
+        $.ajax({
+            type: 'POST',
+            url: "/Case/AddAppointment",
+            data: form,
+            datatype: "json",
+            async: false,
+            contenttype: 'application/json; charset=utf-8',
+            success: function (data) {
+                window.location.href = "/Case/Details/" + id;
+
+                //if (data.Errors) {
+                //    GetErrorsFromModel(data);
+                //}
+            },
+            error: function (xhr) {
+                GetValidationMsg(xhr);
+            }
+        });
+        return false;
+    }
+</script>

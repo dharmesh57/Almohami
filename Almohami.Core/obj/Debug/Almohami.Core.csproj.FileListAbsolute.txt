@@ -1,0 +1,97 @@
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.csprojResolveAssemblyReference.cache
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.dll
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.pdb
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Core\bin\Debug\System.Web.Http.dll
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Core\bin\Debug\System.Net.Http.Formatting.dll
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Core\bin\Debug\System.Web.Http.xml
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Core\bin\Debug\System.Net.Http.Formatting.xml
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.dll
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.pdb
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\System.Web.Http.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\System.Web.Http.xml
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.pdb
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.pdb
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.csprojResolveAssemblyReference.cache
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.csprojResolveAssemblyReference.cache
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.pdb
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.dll
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.pdb
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Newtonsoft.Json.dll
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.csprojResolveAssemblyReference.cache
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.dll
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.csprojResolveAssemblyReference.cache
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\System.Web.Http.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\System.Web.Http.xml
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.csprojResolveAssemblyReference.cache
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.csprojResolveAssemblyReference.cache
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Core\bin\Debug\System.Web.Http.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Core\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Core\bin\Debug\System.Web.Http.xml
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Core\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Core\bin\Debug\System.Web.Http.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Core\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Core\bin\Debug\System.Web.Http.xml
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Core\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.pdb
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Core\bin\Debug\Almohami.Core.pdb
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Core\bin\Debug\System.Web.Http.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Core\bin\Debug\System.Net.Http.Formatting.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Core\bin\Debug\System.Web.Http.xml
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Core\bin\Debug\System.Net.Http.Formatting.xml
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.csprojResolveAssemblyReference.cache
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Core\obj\Debug\Almohami.Core.pdb

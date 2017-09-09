@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
+            xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
+
+  <mvcSiteMapNode title="Dashboard" controller="Dashboard" action="Index" >
+    <mvcSiteMapNode title="Index" controller="Dashboard" action="Index"/>
+    <mvcSiteMapNode title="Role" controller="SecurityRolePermission" action="Index">
+    <mvcSiteMapNode title="Add Role" controller="SecurityRolePermission" action="AddRole"/>
+    <mvcSiteMapNode title="Edit Role" controller="SecurityRolePermission" action="EditRole" preservedRouteParameters="Id" />
+      </mvcSiteMapNode>
+  </mvcSiteMapNode>
+
+</mvcSiteMap>

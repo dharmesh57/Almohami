@@ -1,0 +1,403 @@
+﻿@model Almohami.Services.Entities.CaseEntityModel
+@{
+    ViewBag.Title = "Almohami - Details Case ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .dispfor {
+        font-weight: 400;
+        padding: 5px;
+        margin-top: 2px;
+    }
+
+    .form-group {
+        margin-bottom: 5px !important;
+    }
+
+    .control-label {
+        font-weight: 600 !important;
+    }
+</style>
+<!-- BEGIN PAGE CONTENT BODY -->
+<link href="~/Content/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+
+
+<style>
+    .margin-bottom-20 {
+        margin-bottom: 20px;
+    }
+</style>
+<form id="casedetails">
+    <div class="page-container">
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <!-- BEGIN PAGE HEAD-->
+            <div class="page-head">
+                <div class="container">
+                    <!-- BEGIN PAGE TITLE -->
+                    <div class="page-title">
+                        <h1>
+                            Case
+                            <small>Details</small>
+                        </h1>
+                    </div>
+                    <!-- END PAGE TITLE -->
+                </div>
+            </div>
+            <!-- END PAGE HEAD-->
+            <!-- BEGIN PAGE CONTENT BODY -->
+            <div class="page-content">
+                <div class="container">
+                    <!-- BEGIN PAGE BREADCRUMBS -->
+                    <h3 class="page-title">
+                        <i class="fa fa-folder-o"></i> @if (Model.CaseName != null)
+                        {
+                            @Model.CaseName <span>|</span>   @Model.FileNo
+                        }
+                        <a href="@Url.Action("Edit", "Case", new RouteValueDictionary ( new { id = Model.CaseId } ))" class="page-title-action">
+                            <i class="fa fa-pencil"></i>
+                        </a>
+                    </h3>
+                    <!-- END PAGE BREADCRUMBS -->
+                    <div class="tiles">
+                        <div class="tile bg-blue-steel">
+                            <div class="tile-body">
+                                <i class="fa fa-money"></i>
+                            </div>
+                            <div class="tile-object">
+                                <div class="name">
+                                    Trust
+                                </div>
+                                <div class="number">
+                                    $0.00
+                                    <span class="currency-code">USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile  bg-red-haze">
+                            <div class="tile-body">
+                                <i class="fa fa-money"></i>
+                            </div>
+                            <div class="tile-object">
+                                <div class="name">
+                                    Trust
+                                </div>
+                                <div class="number">
+                                    $0.00
+                                    <span class="currency-code">USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile bg-green-turquoise">
+                            <div class="tile-body">
+                                <i class="fa fa-money"></i>
+                            </div>
+                            <div class="tile-object">
+                                <div class="name">
+                                    Trust
+                                </div>
+                                <div class="number">
+                                    $0.00
+                                    <span class="currency-code">USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile bg-purple-soft">
+                            <div class="tile-body">
+                                <i class="fa fa-money"></i>
+                            </div>
+                            <div class="tile-object">
+                                <div class="name">
+                                    Trust
+                                </div>
+                                <div class="number">
+                                    $0.00
+                                    <span class="currency-code">USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @Html.HiddenFor(a => a.CaseId, new { id = "hdncaseid" })
+                    <!-- BEGIN PAGE CONTENT INNER -->
+                    <div class="page-content-inner">
+                        <div class="row">
+                            <div class="col-md-6 ">
+                                <!-- BEGIN SAMPLE FORM PORTLET-->
+                                <div class="portlet light boxshadow">
+                                    <div class="portlet-body form">
+                                        @*<div class="scroller" style="height: 500px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">*@
+                                        <div class="form-horizontal">
+                                            <div class="form-body row">
+                                                <h3 class="form-section">ABOUT</h3>
+                                                <h5 class="form-section">@Html.DisplayFor(m => m.CaseSubjectOfLawsuit)</h5>
+                                                <div class="col-md-6">
+                                                    <div class="form-group row">
+                                                        @Html.LabelFor(m => m.CaseNo, new { @class = "col-md-5 control-label" })
+                                                        <div class="col-md-7 dispfor">
+                                                            @Html.DisplayFor(m => m.CaseNo)
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CaseName, new { @class = "col-md-5 control-label" })
+                                                        <div class="col-md-7 dispfor">
+                                                            @Html.DisplayFor(m => m.CaseName)
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CaseClient, new { @class = "col-md-5 control-label" })
+                                                        <div class="col-md-7 dispfor">
+                                                            <a href="@Url.Action("Details", "Client", new { id = @Model.CaseClient })">
+                                                                @Html.DisplayFor(m => m.ClientName)
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CaseAssignedTo, new { @class = "col-md-5 control-label" })
+                                                        <div class="col-md-7 dispfor">
+                                                            <a href="@Url.Action("Details", "User", new { id=@Model.CaseAssignedTo})">
+                                                                @Html.DisplayFor(m => m.Username)
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CaseCourtID, new { @class = "col-md-5 control-label" })
+                                                        <div class="col-md-7 dispfor">
+                                                            @Html.DisplayFor(m => m.CourtName)
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CaseGovNo, new { @class = "col-md-5 control-label" })
+
+                                                        <div class="col-md-7 dispfor">
+                                                            @Html.DisplayFor(m => m.CaseGovNo)
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CaseFloorNo, new { @class = "col-md-5 control-label" })
+
+                                                        <div class="col-md-7 dispfor">
+                                                            @Html.DisplayFor(m => m.CaseFloorNo)
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CaseHallNo, new { @class = "col-md-5 control-label" })
+
+                                                        <div class="col-md-7 dispfor">
+                                                            @Html.DisplayFor(m => m.CaseHallNo)
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CaseTypeID, new { @class = "col-md-5 control-label" })
+
+                                                        <div class="col-md-7 dispfor">
+                                                            @Html.DisplayFor(m => m.CaseTypeName)
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CasePrimaryStatusID, new { @class = "col-md-5 control-label" })
+
+                                                        <div class="col-md-7 dispfor">
+                                                            @Html.DisplayFor(m => m.PrimaryStatus)
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CaseAppealStatusID, new { @class = "col-md-5 control-label" })
+
+                                                        <div class="col-md-7 dispfor">
+                                                            @Html.DisplayFor(m => m.AppealStatus)
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CaseDiscriminationStatusID, new { @class = "col-md-5 control-label" })
+
+                                                        <div class="col-md-7 dispfor">
+                                                            @Html.DisplayFor(m => m.DiscriminationStatus)
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CaseOneNo, new { @class = "col-md-5 control-label" })
+
+                                                        <div class="col-md-7 dispfor">
+                                                            @Html.DisplayFor(m => m.CaseOneNo)
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CaseLastNo, new { @class = "col-md-5 control-label" })
+
+                                                        <div class="col-md-7 dispfor">
+                                                            @Html.DisplayFor(m => m.CaseLastNo)
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(m => m.CaseAppealNo, new { @class = "col-md-5 control-label" })
+
+                                                        <div class="col-md-7 dispfor">
+                                                            @Html.DisplayFor(m => m.CaseAppealNo)
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @*</div>*@
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="portlet light boxshadow">
+                                    <div class="portlet-title">
+                                        <div class="caption caption-md">
+                                            <i class="icon-bar-chart font-dark hide"></i>
+                                            <span class="caption-subject font-green-steel bold uppercase">Case Updates</span>
+                                        </div>
+                                        <div class="inputs">
+                                            <div class="portlet-input input-inline input-small ">
+                                                <a class="btn blue" onclick="GetUpdates()" data-toggle="modal"> <i class="fa fa-plus"></i> Add New Update</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="scroller" style="height: 350px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
+                                            <div class="general-item-list">
+                                                @if (Model.CaseUpdateList.Count > 0)
+                                                {
+                                                    foreach (var item in Model.CaseUpdateList)
+                                                    {
+                                                        <div class="item">
+                                                            <div class="item-head">
+                                                                <div class="item-details">
+                                                                    @*@if (item.User.UserAvtar != null)
+                                                                        {
+                                                                            <img src="~/Content/Img/clientimg/@item.User.UserAvtar" class="item-pic rounded" />
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            <img class="item-pic rounded" src="~/Content/layout3/img/avatar1.jpg">
+                                                                        }
+                                                                        <a href="@Url.Action("Details", "User")" class="item-name primary-link">@item.User.UserName</a>*@
+                                                                    <span class="item-label">
+                                                                        @item.CaseUpdateCreatedDate
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-title">@item.CaseUpdateTitle </div>
+                                                            <div class="item-body">  @item.CaseUpdateDescription </div>
+                                                        </div>
+                                                    }
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="portlet light boxshadow">
+                                    <div class="portlet-title">
+                                        <div class="caption caption-md">
+                                            <i class="icon-bar-chart font-dark hide"></i>
+                                            <span class="caption-subject font-green-steel bold uppercase">Upcomming Appointments</span>
+                                        </div>
+                                    </div>
+                                    @*<div class="portlet-title">
+                                            <div class="caption caption-md">
+                                                <i class="icon-bar-chart font-dark hide"></i>
+                                                <span class="caption-subject font-green-steel bold uppercase">Upcomming Appointments</span>
+                                            </div>
+                                            <div class="inputs">
+                                                <div class="portlet-input input-inline input-small ">
+                                                    <a class="btn blue" onclick="AddAppointment()" data-toggle="modal"> <i class="fa fa-plus"></i> New Appointment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portlet-body">
+                                            <div class="scroller" style="height: 450px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
+
+                                                <div id="calendar" class="has-toolbar"> </div>
+                                            </div>
+                                        </div>*@
+
+                                    <!-- BEGIN PAGE CONTENT INNER -->
+                                   @Html.Partial("_AppointmentCalender",Model)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END PAGE CONTENT INNER -->
+
+        </div>
+        <!-- END PAGE CONTENT BODY -->
+        <!-- END CONTENT BODY -->
+    </div>
+    <!-- END CONTENT -->
+    <div id="modalupadate"></div>
+    <div id="modalappointmentupdate"></div>
+
+</form>
+
+
+<script>
+
+    function GetUpdates() {
+
+        var form = $("#casedetails").serialize();
+        var id = $("#hdncaseid").val();
+        $.ajax({
+            type: 'Get',
+            url: "/Case/AddCaseUpdates/" + id,
+            data: form,
+            datatype: "json",
+            async: false,
+            contenttype: 'application/json; charset=utf-8',
+            success: function (data) {
+                $('#modalupadate').html(data);
+                $("#AddUpdatesModal").modal('show');
+                //toaster.success("THANK YOU! Please go to your inbox and confirm your email")
+
+                if (data.Errors) {
+                    GetErrorsFromModel(data);
+                }
+            },
+            error: function (xhr) {
+                alert(xhr.responseText);
+                alert("Critical Error!. Failed to call the server.");
+            }
+        });
+        return false;
+    }
+
+    function AddAppointment() {
+
+        var form = $("#casedetails").serialize();
+        var id = $("#hdncaseid").val();
+        $.ajax({
+            type: 'Get',
+            url: "/Case/AddAppointment/" + id,
+            data: form,
+            datatype: "json",
+            async: false,
+            contenttype: 'application/json; charset=utf-8',
+            success: function (data) {
+                $('#modalappointmentupdate').html(data);
+                $("#AddAppointmentModal").modal('show');
+                //toaster.success("THANK YOU! Please go to your inbox and confirm your email")
+
+                if (data.Errors) {
+                    GetErrorsFromModel(data);
+                }
+            },
+            error: function (xhr) {
+                alert(xhr.responseText);
+                alert("Critical Error!. Failed to call the server.");
+            }
+        });
+        return false;
+    }
+</script>

@@ -1,0 +1,168 @@
+﻿@model Almohami.Services.Entities.CaseUpdatesEntityModel
+
+
+<!-- BEGIN PAGE CONTENT BODY -->
+<link href="~/Content/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/Plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+<style>
+    .margin-bottom-20 {
+        margin-bottom: 20px;
+    }
+</style>
+
+<div class="modal fade" id="AddUpdatesModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                   
+                </h4>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        @if (TempData["SuccessMessage"] != null)
+                        {
+                        <div id="successdiv" class="alert alert-success alert-dismissible note note-success">
+                            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                            <h4><i class="icon fa fa-thumbs-up"></i> success!</h4>
+                            <span id="successmes">  @TempData["SuccessMessage"]</span>
+
+                        </div>
+                        }
+                        else if (TempData["ErrorMessage"] != null)
+                        {
+                        <div id="errordiv" class="alert alert-danger  alert-dismissible">
+                            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                            <h4><i class="icon fa fa-ban"></i>Error!</h4>
+                            <span id="errormes"> @TempData["ErrorMessage"] </span>
+
+                        </div>
+                        }
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet light">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-plus font-dark"></i>
+                                    <span class="caption-subject font-dark sbold uppercase">Add New Case Updates</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body form">
+                                <div class="form-horizontal">
+                                    <div class="form-body">
+                                        @Html.HiddenFor(m => m.CaseUpdateId)
+                                        @Html.HiddenFor(m => m.CaseUpdateCaseId, new { id = "hdnCaseUpdateCaseId" })                                                                          
+                                        <h3 class="form-section">Update</h3>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseUpdateTitle, new { @class = "col-md-3 control-label" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-folder"></i>
+                                                    </span>
+                                                    @Html.TextBoxFor(m => m.CaseUpdateTitle, new { @class = "form-control input-large", @placeholder = "Add Subject" })
+                                                    @Html.ValidationMessageFor(m => m.CaseUpdateTitle)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseUpdateDescription, new { @class = "col-md-3 control-label" })
+                                            <div class="col-md-4">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-check-circle-o"></i>
+                                                    </span>
+                                                    @Html.TextAreaFor(m => m.CaseUpdateDescription, new { @class = "form-control input-large", @placeholder = "Comment", @rows = "3", @cols = "10" })
+                                                    @Html.ValidationMessageFor(m => m.CaseUpdateDescription)
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" class="btn red"
+                            data-dismiss="modal">
+                        <i class="fa fa-remove"></i> Cancel
+                    </button>
+                    <button type="button" class="btn green-meadow" onclick="SaveUpdates()">
+                        <i class="fa fa-check"></i> Save
+                    </button>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>       
+<script>function SaveUpdates() {
+
+    var form = $("#casedetails").serialize();
+    var id = $("#hdnCaseUpdateCaseId").val();
+    $.ajax({
+        type: 'POST',
+        url: "/Case/AddCaseUpdates",
+        data: form,
+        datatype: "json",
+        async: false,
+        contenttype: 'application/json; charset=utf-8',
+        success: function (data) {
+         window.location.href = "/Case/Details/" + id;
+            //toaster.success("THANK YOU! Please go to your inbox and confirm your email")
+            if (data.Errors) {
+                GetErrorsFromModel(data);
+            }
+        },
+        error: function (xhr) {
+            hideloader();
+            alert(xhr.responseText);
+            alert("Critical Error!. Failed to call the server.");
+        }
+    });
+    return false;
+}</script>
+ 
+@*<script>
+    $(document).ready(function () {
+        var newCase = "<option class='red' value='NewCase'> + Add New Case</option>";
+
+        $("select#single-append-text").append(newCase).trigger('change');
+
+        $('select#single-append-text').change(function () {
+            if ($(this).val() === 'NewCase') {
+                window.location.href = "/Case/Create"
+            }
+        });
+
+        var news = "<option class='red' value='NewClient'> + Add New Client</option>";
+
+        $("select#single-append-text-2").append(news).trigger('change');
+
+        $('select#single-append-text-2').change(function () {
+            if ($(this).val() === 'NewClient') {
+                window.location.href = "/Client/Create"
+            }
+        });
+    });
+
+</script>*@

@@ -1,0 +1,138 @@
+﻿@model Almohami.Services.Entities.RegisterModel
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" dir="rtl">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>User Panel | User Registration</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="User Account Page" name="description" />
+    <meta content="" name="author" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    @Styles.Render("~/Content/GlobalPlugins")
+    @Styles.Render("~/Content/GlobalCss")
+
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    
+    <link href="~/Content/login.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="~/favicon.ico" />
+    <style>
+        .field-validation-error {
+            color:red
+        }
+           </style>
+</head>
+<!-- END HEAD -->
+
+<body class="login">
+    <!-- BEGIN LOGO -->
+    <div class="logo">
+        <a href="index.html">
+            <img src="~/Content/Img/logo.jpg" alt="" />
+        </a>
+    </div>
+    <!-- END LOGO -->
+    <!-- BEGIN LOGIN -->
+    <div class="content">
+        <div class="row">
+            <div class="col-md-12">
+                @if (TempData["SuccessMessage"]!=null)
+                {
+                    <div id="successdiv" class="alert alert-success alert-dismissible note note-success">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                        <h4><i class="icon fa fa-thumbs-up"></i> success!</h4>
+                        <span id="successmes">  @TempData["SuccessMessage"]</span>
+                      
+                    </div>
+                }
+                else if (TempData["ErrorMessage"] != null)
+                {
+                <div id="errordiv" class="alert alert-danger  alert-dismissible">
+                    <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                    <h4><i class="icon fa fa-ban"></i>Error!</h4>
+                    <span id="errormes"> @TempData["ErrorMessage"] </span>
+                  
+                </div>
+                }
+                
+            </div>
+        </div>
+        <!-- BEGIN REGISTRATION FORM -->
+        @using (Html.BeginForm("Registration", "Account", FormMethod.Post, new { @class = "register-form", role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+        <h3 class="font-blue">Sign Up</h3>
+        <p class="hint">Enter your personal details below: </p>
+        <div class="form-group">
+            @Html.LabelFor(a => a.Name, new { @class = "control-label visible-ie8 visible-ie9" })
+            @Html.TextBoxFor(a =>  a.Name, new { @class = "form-control placeholder-no-fix", @placeholder = "Full Name" })
+            @Html.ValidationMessageFor(a =>  a.Name)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(a => a.Company, new { @class = "control-label visible-ie8 visible-ie9" })
+            @Html.TextBoxFor(a =>  a.Company, new { @class = "form-control placeholder-no-fix", @placeholder = "Company Name" })
+            @Html.ValidationMessageFor(a =>  a.Company)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(a =>  a.MobileNo, new { @class = "control-label visible-ie8 visible-ie9" })
+            @Html.TextBoxFor(a =>  a.MobileNo, new { @class = "form-control placeholder-no-fix", @placeholder = "Mobile No" })
+            @Html.ValidationMessageFor(a =>  a.MobileNo)
+        </div>
+        <p class="hint">Enter your account details below: </p>
+        <div class="form-group">
+            <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+            @Html.LabelFor(a =>  a.Email, new { @class = "control-label visible-ie8 visible-ie9" })
+            @Html.TextBoxFor(a => a.Email, new { @class = "form-control placeholder-no-fix", @placeholder = "Email Id" })
+            @Html.ValidationMessageFor(a =>  a.Email)
+        </div>
+        <div class="form-group password-strength">
+            @Html.LabelFor(a =>  a.Password, new { @class = "control-label visible-ie8 visible-ie9" })
+            @Html.PasswordFor(a =>  a.Password, new { @class = "form-control placeholder-no-fix", @placeholder = "Password" })
+            <span class="help-block">Password Strength </span>
+            @Html.ValidationMessageFor(a =>  a.Password)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(a =>  a.ConfirmPassword, new { @class = "control-label visible-ie8 visible-ie9" })
+            @Html.PasswordFor(a =>  a.ConfirmPassword, new { @class = "form-control placeholder-no-fix", @placeholder = "Retype Password" })
+            @Html.ValidationMessageFor(a => a.ConfirmPassword)
+        </div>
+        <div class="form-actions">
+            <input type="reset" id="register-back-btn" class="btn blue btn-outline" value="Cancel" />
+            <input type="submit" id="register-submit-btn" class="btn btn-success uppercase pull-right"
+                   value="Submit" />
+        </div>
+    <div class="create-account">
+        <p>
+            @Html.ActionLink("Already have an account?", "Login", "/Account/Login", new { @class = "uppercase" })
+
+        </p>
+    </div>
+        }
+
+        <!-- END REGISTRATION FORM -->
+    </div>
+
+    <!--[if lt IE 9]>
+    <script src="~/Scripts/respond.min.js"></script>
+    <script src="~/Scripts/excanvas.min.js"></script>
+    <script src="~/Scripts/ie8.fix.min.js"></script>
+    <![endif]-->
+    @Scripts.Render("~/Bundles/CorePlugins")
+    @Scripts.Render("~/Bundles/GlobalScripts")
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/pwstrength-bootstrap.min.js"></script>
+    <script src="~/Scripts/login.min.js" type="text/javascript"></script>
+    
+</body>
+
+</html>
+

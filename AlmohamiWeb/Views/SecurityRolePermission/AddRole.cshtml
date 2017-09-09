@@ -1,0 +1,185 @@
+﻿@model Almohami.Services.Entities.SecurityRolePermissionEntityModel
+
+@{
+    ViewBag.Title = "Almohami - New Role";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/custom.css" rel="stylesheet" />
+<div class="page-content">
+    <div class="container">
+        <div class="page-content-inner">
+            @using (Html.BeginForm("AddRole", "SecurityRolePermission", FormMethod.Post, new { @id = "addroleForm", @class = "form-horizontal" }))
+            {
+                <div class="row">
+                    <div class="col-md-12">
+                        @if (TempData["SuccessMessage"] != null)
+                        {
+                            <div id="successdiv" class="alert alert-success alert-dismissible note note-success">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                <h4><i class="icon fa fa-thumbs-up"></i> success!</h4>
+                                <span id="successmes">  @TempData["SuccessMessage"]</span>
+
+                            </div>
+                        }
+                        else if (TempData["ErrorMessage"] != null)
+                        {
+                            <div id="errordiv" class="alert alert-danger  alert-dismissible">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                <h4><i class="icon fa fa-ban"></i>Error!</h4>
+                                <span id="errormes"> @TempData["ErrorMessage"] </span>
+
+                            </div>
+                        }
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-folder font-dark"></i>
+                                    <span class="caption-subject font-dark sbold uppercase">@Resources.Resource.AddRoleTitle</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body form">
+                                <div class="form-horizontal">
+                                    <div class="form-body section">
+                                        @Html.HiddenFor(m => m.SecurityRoleId)
+
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">@Resources.Resource.AddRoleName</label>
+                                            <div class="col-md-4">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-user"></i>
+                                                    </span>
+                                                    @Html.TextBoxFor(m => m.RoleName, new { @class = "form-control" })
+                                                </div>
+                                                @Html.ValidationMessageFor(m => m.RoleName)
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">@Resources.Resource.AddRoleDescription</label>
+                                            <div class="col-md-4">
+                                                @Html.TextAreaFor(m => m.RoleDescription, new { @class = "form-control ", @placeholder = "Note", @rows = "6", @cols = "30" })
+                                                @Html.ValidationMessageFor(m => m.RoleDescription)
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class=" col-md-3 control-label">  @Resources.Resource.IsActive </label>
+                                            <div class="col-sm-7 col-md-9 col-sm-offset-0">
+                                                <div class="checkbox">
+                                                    @Html.CheckBoxFor(model => model.IsActive)
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="form-actions">
+                                        <div class="row">
+                                            <div class="col-md-offset-3 col-md-9">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn green-meadow" onclick="Submit()">
+                                                        <i class="fa fa-check"></i> @Resources.Resource.Save
+                                                    </button>
+                                                    <button type="button" class="btn green-meadow dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li>
+                                                            <a href="@Url.Action("SaveAndNew", "SecurityRolePermission")" class="green-meadow" data-form-method="post" onclick="SaveNew()"> <i class="fa fa-plus"></i> @Resources.Resource.SaveAndNew </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="@Url.Action("Index", "SecurityRolePermission")" class="btn red"> <i class="fa fa-remove"></i> @Resources.Resource.Cancel</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/select2.full.min.js" type="text/javascript"></script>
+<script>
+    //$("a[data-form-method='post']").click(function (event) {
+    //    event.preventDefault();
+    //    var element = $(this);
+    //    var action = element.attr("href");
+    //    element.closest("form").each(function () {
+    //        var form = $(this);
+    //        form.attr("action", action);
+    //        form.submit();
+    //    });
+    //});
+</script>
+<script>
+    function Submit() {
+        showloader();
+        var form = $("#addroleForm").serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: "/SecurityRolePermission/AddRole/",
+            data: form,
+            datatype: "json",
+            async: false,
+            contenttype: 'application/json; charset=utf-8',
+            success: function (data) {
+                
+                if (data.success == true) {
+                    //window.location.href = "/SecurityRolePermission/Index"
+                    toaster.success("Role is added successfully!!!");
+
+                    window.location.reload();
+                } else {
+                    toaster.danger("Role is not added successfully!!!");
+                }
+
+            },
+            error: function (xhr) {
+                GetValidationMsg(xhr);
+            }
+        });
+        return false;
+    }
+</script>
+
+<script>
+    function SaveNew() {
+        showloader();
+        var form = $("#addroleForm").serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: "/SecurityRolePermission/SaveAndNew/",
+            data: form,
+            datatype: "json",
+            async: false,
+            contenttype: 'application/json; charset=utf-8',
+            success: function (data) {
+
+                if (data.Success == true) {
+                    window.location.href = "/SecurityRolePermission/Index"
+                }
+
+                if (data.Errors) {
+                    GetErrorsFromModel(data);
+                }
+            },
+            error: function (xhr) {
+                // alert(xhr.responseText);
+                alert("Critical Error!. Failed to call the server.");
+            }
+        });
+        return false;
+    }
+</script>
+

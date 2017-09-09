@@ -1,0 +1,336 @@
+﻿@model Almohami.Services.Entities.CaseEntityModel
+
+@{
+    ViewBag.Title = "Almohami - New Case";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- BEGIN PAGE CONTENT BODY -->
+<link href="~/Content/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+<div class="page-content">
+    <div class="container">
+        <div class="page-content-inner">
+            @using (Html.BeginForm("Create", "Case", FormMethod.Post, new { @id = "CreateCaseForm", @class = "form-horizontal" }))
+            {
+                <div class="row">
+                    <div class="col-md-12">
+                        @if (TempData["SuccessMessage"] != null)
+                        {
+                            <div id="successdiv" class="alert alert-success alert-dismissible note note-success">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                <h4><i class="icon fa fa-thumbs-up"></i> success!</h4>
+                                <span id="successmes">  @TempData["SuccessMessage"]</span>
+
+                            </div>
+                        }
+                        else if (TempData["ErrorMessage"] != null)
+                        {
+                            <div id="errordiv" class="alert alert-danger  alert-dismissible">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                <h4><i class="icon fa fa-ban"></i>Error!</h4>
+                                <span id="errormes"> @TempData["ErrorMessage"] </span>
+
+                            </div>
+                        }
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-folder font-dark"></i>
+                                    <span class="caption-subject font-dark sbold uppercase">New Case</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body form">
+                                <div class="form-horizontal">
+                                    <div class="form-body section">
+                                        @Html.HiddenFor(m => m.CaseId)
+
+                                        @Html.HiddenFor(m => m.CaseGlobalNo)
+                                        <h4>ABOUT</h4>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseNo, new { @class = "col-md-3 control-label required" })
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-list-ol"></i>
+                                                    </span>
+                                                    @if (ViewBag.Flag == false)
+                                                    {
+                                                        @Html.TextBoxFor(m => Model.CaseNo, new { @class = "form-control input-large ", @placeholder = "Case No" })
+                                                    }
+                                                    else
+                                                    {
+                                                        @Html.HiddenFor(m => m.CaseNo)
+                                                        @Html.TextBoxFor(m => Model.CaseNo, new { @class = "form-control input-large", @placeholder = "Case No", @disabled = "disabled" })
+                                                    }
+                                                    @Html.ValidationMessageFor(m => m.CaseNo)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseAssignedTo, new { @class = "col-md-3 control-label required" })
+                                            <div class="col-md-4">
+                                                <div class="input-group select2-bootstrap-append">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-user"></i>
+                                                    </span>
+                                                    @Html.DropDownListFor(m => m.CaseAssignedTo, new SelectList(Model.UserList, "UserID", "UserName"), "---Select User---", new { @class = "form-control input-large select2-allow-clear", @id = "single-append-text" })
+
+                                                </div>
+                                                @Html.ValidationMessageFor(m => m.CaseAssignedTo)
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseClient, new { @class = "col-md-3 control-label required" })
+                                            <div class="col-md-4">
+                                                <div class="input-group select2-bootstrap-append">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-user"></i>
+                                                    </span>
+                                                    @Html.DropDownListFor(m => m.CaseClient, new SelectList(Model.ClientList, "ClientID", "ClientName"), "---Select Client---", new { @class = "form-control input-large select2-allow-clear", @id = "single-append-text" })
+                                                </div>
+                                                @Html.ValidationMessageFor(m => m.CaseClient)
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseName, new { @class = "col-md-3 control-label required" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-folder"></i>
+                                                    </span>
+                                                    @Html.TextBoxFor(m => m.CaseName, new { @class = "form-control input-large", @placeholder = "Case Title" })
+                                                    @Html.ValidationMessageFor(m => m.CaseName)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseSubjectOfLawsuit, new { @class = "col-md-3 control-label required" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-check-circle-o"></i>
+                                                    </span>
+                                                    @Html.TextBoxFor(m => m.CaseSubjectOfLawsuit, new { @class = "form-control input-large", @placeholder = "Subject Of The Lawsuit" })
+                                                    @Html.ValidationMessageFor(m => m.CaseSubjectOfLawsuit)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseNotes, new { @class = "col-md-3 control-label" })
+
+                                            <div class="col-md-4">
+                                                @Html.TextAreaFor(m => m.CaseNotes, new { @class = "form-control", @placeholder = "Note", @rows = "4", @cols = "30" })
+                                                @Html.ValidationMessageFor(m => m.CaseNotes)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-body section">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseTypeID, new { @class = "col-md-3 control-label required" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-filter"></i>
+                                                    </span>
+                                                    @Html.DropDownListFor(m => m.CaseTypeID, new SelectList(Model.CaseTypeList, "CaseTypeId", "CaseTypeDescription"), "---Select Case Type ---", new { @class = "form-control input-large" })
+                                                    @Html.ValidationMessageFor(m => m.CaseTypeID)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CasePrimaryStatusID, new { @class = "col-md-3 control-label required" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-filter"></i>
+                                                    </span>
+                                                    @Html.DropDownListFor(m => m.CasePrimaryStatusID, new SelectList(Model.CasePrimaryStatusList, "CasePrimaryStatusId", "CasePrimaryStausTitle"), "---Select Case Primary Status ---", new { @class = "form-control input-large" })
+                                                    @Html.ValidationMessageFor(m => m.CasePrimaryStatusID)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseAppealStatusID, new { @class = "col-md-3 control-label required" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-filter"></i>
+                                                    </span>
+                                                    @Html.DropDownListFor(m => m.CaseAppealStatusID, new SelectList(Model.CaseAppealList, "CaseAppealStatusId", "CaseAppealDescription"), "---Select Case Appeal Status ---", new { @class = "form-control input-large" })
+                                                    @Html.ValidationMessageFor(m => m.CaseAppealStatusID)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseDiscriminationStatusID, new { @class = "col-md-3 control-label required" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-filter"></i>
+                                                    </span>
+                                                    @Html.DropDownListFor(m => m.CaseDiscriminationStatusID, new SelectList(Model.CaseDiscriminationList, "CaseDiscriminationStatusId", "CaseDiscriminationStatusDescription"), "---Select Case Discrimination Status---", new { @class = "form-control input-large" })
+                                                    @Html.ValidationMessageFor(m => m.CaseDiscriminationStatusID)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseCourtID, new { @class = "col-md-3 control-label required" })
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-bank"></i>
+                                                    </span>
+                                                    @Html.DropDownListFor(m => m.CaseCourtID, new SelectList(Model.CourtList, "CourtId", "CourtName"), "---Select Court---", new { @class = "form-control input-large" })
+                                                    @Html.ValidationMessageFor(m => m.CaseCourtID)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-body section">
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseGovNo, new { @class = "col-md-3 control-label required" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-certificate"></i>
+                                                    </span>
+                                                    @Html.TextBoxFor(m => m.CaseGovNo, new { @class = "form-control input-large", @placeholder = "Gov No" })
+                                                    @Html.ValidationMessageFor(m => m.CaseGovNo)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseOneNo, new { @class = "col-md-3 control-label required" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-certificate"></i>
+                                                    </span>
+                                                    @Html.TextBoxFor(m => m.CaseOneNo, new { @class = "form-control input-large", @placeholder = "Case One No" })
+                                                    @Html.ValidationMessageFor(m => m.CaseOneNo)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseAppealNo, new { @class = "col-md-3 control-label required" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-certificate"></i>
+                                                    </span>
+                                                    @Html.TextBoxFor(m => m.CaseAppealNo, new { @class = "form-control input-large", @placeholder = "Appeal No" })
+                                                    @Html.ValidationMessageFor(m => m.CaseAppealNo)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseLastNo, new { @class = "col-md-3 control-label required" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-certificate"></i>
+                                                    </span>
+                                                    @Html.TextBoxFor(m => m.CaseLastNo, new { @class = "form-control input-large ", @placeholder = "Last No" })
+                                                    @Html.ValidationMessageFor(m => m.CaseLastNo)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseFloorNo, new { @class = "col-md-3 control-label required" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-certificate"></i>
+                                                    </span>
+                                                    @Html.TextBoxFor(m => m.CaseFloorNo, new { @class = "form-control input-large", @placeholder = "Floor No" })
+                                                    @Html.ValidationMessageFor(m => m.CaseFloorNo)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseHallNo, new { @class = "col-md-3 control-label required" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-certificate"></i>
+                                                    </span>
+                                                    @Html.TextBoxFor(m => m.CaseHallNo, new { @class = "form-control input-large", @placeholder = "Hall No" })
+                                                    @Html.ValidationMessageFor(m => m.CaseHallNo)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.CaseActiveStatus, new { @class = "col-md-3 control-label required" })
+
+                                            <div class="col-md-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-certificate"></i>
+                                                    </span>
+                                                    @Html.EnumDropDownListFor(m => m.CaseActiveStatus, new { @class = "form-control input-large" })
+                                                    @Html.ValidationMessageFor(m => m.CaseActiveStatus)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-actions">
+                                        <div class="row">
+                                            <div class="col-md-offset-3 col-md-9">
+                                                <div class="btn-group">
+                                                    <button type="submit" class="btn green-meadow">
+                                                        <i class="fa fa-check"></i> Save
+                                                    </button>
+                                                    @*<a href="@Url.Action("Create", "Case")" class="btn green-meadow"> <i class="fa fa-check"></i> Save </a>*@
+                                                    <button type="button" class="btn green-meadow dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li>
+                                                            <a href="@Url.Action("SaveAndNew", "Case")" class="green-meadow" data-form-method="post"> <i class="fa fa-plus"></i> Save &amp; New </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="@Url.Action("List", "Case")" class="btn red"> <i class="fa fa-remove"></i> Cancel</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/select2.full.min.js" type="text/javascript"></script>
+<script>
+    $("a[data-form-method='post']").click(function (event) {
+        event.preventDefault();
+        var element = $(this);
+        var action = element.attr("href");
+        element.closest("form").each(function () {
+            var form = $(this);
+            form.attr("action", action);
+            form.submit();
+        });
+    });
+</script>

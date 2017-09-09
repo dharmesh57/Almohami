@@ -1,0 +1,34 @@
+﻿@using AlmohamiWeb.Models
+@{
+    int culture = 0;
+    if (Session["CurrentUICulture"] == null)
+    {
+        Session["CurrentUICulture"] = (int)Almohami.Core.Enums.Language.English;
+    }
+    else
+    {
+        culture = Convert.ToInt32(Session["CurrentUICulture"]);
+    }
+}
+
+<div class="langselection">
+    <label class="label control-label wysiwyg-color-white lbl-ln">Select Language :</label>
+    <select class="currentCulture form-control " name="selectCulture" id="_cultureDDL" onchange="changeCurrentCulture(this.value)" style="width: 125px;">
+        @if (culture == 2)
+        {
+
+            <option value="2" class="araflag" title="@Url.Content("~/Content/Img/flags/flag_Ro.png")" selected="selected">Arabic</option>
+            <option value="1" class="engflag" title="@Url.Content("~/Content/Img/flags/flag_En.png")">English</option>
+
+        }
+        else
+        {
+            <option value="2" class="araflag" title="@Url.Content("~/Content/Img/flags/flag_Ro.png")">Arabic⁠⁠⁠⁠</option>
+            <option value="1" class="engflag" title="@Url.Content("~/Content/Img/flags/flag_En.png")" selected="selected">English</option>
+
+        }
+
+    </select>
+</div>
+@*@ViewResources.Creation.Resource.IndexTitle*@
+

@@ -1,0 +1,13 @@
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Release\Almohami.Services.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Release\Almohami.Services.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Release\Almohami.Core.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Release\Almohami.Data.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Release\AutoMapper.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Release\EntityFramework.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Release\NetJSON.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Release\Almohami.Core.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Release\Almohami.Data.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Release\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Release\Almohami.Services.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Release\Almohami.Services.pdb

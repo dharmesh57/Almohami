@@ -1,0 +1,312 @@
+﻿@model Almohami.Services.Entities.BaseViewModel
+
+@using MvcSiteMapProvider;
+@using AlmohamiWeb.Models
+@{
+    int culture = 0;
+    if (Session["CurrentUICulture"] == null)
+    {
+        culture = (int)Almohami.Core.Enums.Language.English;
+    }
+    else
+    {
+        culture = Convert.ToInt32(Session["CurrentUICulture"]);
+    }
+    var currentUser = User as AlmohamiWeb.Security.CustomPrincipal;
+   
+
+
+}
+<!DOCTYPE html>
+<html dir="rtl">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Preview page of Metronic Admin RTL Theme #3 for dashboard & statistics"
+          name="description" />
+    <meta content="" name="author" />
+    <link href="~/Content/dd.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    @Styles.Render("~/Content/GlobalPlugins")
+    @Styles.Render("~/Content/GlobalCss")
+    <link href="~/Content/layout3/css/layout-rtl.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/layout3/css/themes/default-rtl.min.css" rel="stylesheet" type="text/css" />
+      
+    <link rel="shortcut icon" href="~/favicon.ico" />
+    @Scripts.Render("~/Bundles/CorePlugins")
+    <link href="~/Content/custom.css" rel="stylesheet" />
+    <style>
+        .field-validation-error {
+            color: red;
+            margin: 10px;
+        }
+            .langselection {
+            display: block;
+            float: left;
+            width: 255px;
+            padding: 3px 0;
+        }
+
+        .lbl-ln {
+            display: inline-block;
+            float: left;
+            padding: 10px 5px;
+        }
+
+        .currentCulture {
+            margin: 2px 5px;
+        }
+    </style>
+    
+
+
+</head>
+
+<!-- END HEAD -->
+
+<body class="page-container-bg-solid">
+    @*<form id="formcontent" class="form-horizontal" role="form">*@
+
+    <div class="page-wrapper">
+        <div class="page-wrapper-row">
+            <div class="page-wrapper-top">
+                <!-- BEGIN HEADER -->
+                <div class="page-header">
+                    <!-- BEGIN HEADER TOP -->
+                    <div class="page-header-top">
+                        <div class="container-fluid">
+                            <!-- BEGIN LOGO -->
+                            <div class="page-logo">
+                                <a href="index.html">
+                                    <img src="~/Content/layout3/img/logo-default.png" alt="logo" class="logo-default">
+                                </a>
+                            </div>
+
+                            <!-- END LOGO -->
+                            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                            
+                            <a href="javascript:;" class="menu-toggler"></a>
+                            <!-- END RESPONSIVE MENU TOGGLER -->
+                            <!-- BEGIN TOP NAVIGATION MENU -->
+                            <div class="top-menu">
+                                <ul class="nav navbar-nav pull-right">
+
+                                    <!-- END INBOX DROPDOWN -->
+                                    <!-- BEGIN USER LOGIN DROPDOWN -->
+
+                                    <li class="dropdown dropdown-user dropdown-dark">
+                                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                                           data-close-others="true">
+                                            <img alt="" class="img-circle" src="~/Content/layout3/img/avatar9.jpg">
+                                            <span class="username username-hide-mobile">
+                                                @currentUser.Name
+                                            </span>
+
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-default">
+                                            <li>
+                                                <a href="@Url.Action("Index", "Settings")"><i class="icon-settings"></i>  Main Settings</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="@Url.Action("LogOut", "Dashboard")"><i class="fa fa-key"></i>  Log Out</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- END USER LOGIN DROPDOWN -->
+                                </ul>
+                                @if (currentUser.RoleId == 26)
+                                {
+                                    @Html.Partial("_Langauges")
+                                }
+                            </div>
+                            <!-- END TOP NAVIGATION MENU -->
+                        </div>
+                    </div>
+                    <!-- END HEADER TOP -->                    
+                    <!-- BEGIN HEADER MENU -->
+                    <div class="page-header-menu">
+                        <div class="container-fluid">
+                            <form class="search-form" action="page_general_search.html" method="GET">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search" name="query">
+                                    <span class="input-group-btn">
+                                        <a href="javascript:;" class="btn submit">
+                                            <i class="icon-magnifier"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </form>
+                            <!-- BEGIN HEADER SEARCH BOX -->
+                            <!-- END HEADER SEARCH BOX -->
+                            <!-- BEGIN MEGA MENU -->
+                            <!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
+                            <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
+                            @Html.Action("Menubind", "Dashboard")
+                            @*@{ Html.RenderPartial("/Views/Dashboard/_Menubind.cshtml", Model); }*@
+                            <!-- END MEGA MENU -->
+                        </div>
+                    </div>
+                </div>
+                <!-- END MEGA MENU -->
+            </div>
+        </div>
+        <!-- END HEADER MENU -->
+        <!-- END HEADER -->
+        <div class="page-wrapper-row full-height">
+            <div class="page-wrapper-middle">
+                <!-- BEGIN CONTAINER -->
+                <div class="page-container">
+                    <!-- BEGIN CONTENT -->
+                    <div class="page-content-wrapper">
+                        <div class="page-content">
+                            <div class="container-fluid">
+                                <!-- BEGIN CONTENT BODY -->
+                                @*@Html.MvcSiteMap().SiteMapPath()*@
+
+
+                                @*<ul class="page-breadcrumb breadcrumb">
+                                        <li>
+                                            <a href="index.html">Home</a>
+                                            <i class="fa fa-circle"></i>
+                                        </li>
+                                        <li>
+                                            <a href="#">Components</a>
+                                            <i class="fa fa-circle"></i>
+                                        </li>
+                                        <li>
+                                            <span>Select Splitter</span>
+                                        </li>
+                                    </ul>*@
+
+                                @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+                                @RenderBody()
+                            </div>
+                        </div>
+               
+                        <!-- END CONTENT BODY -->
+
+                    </div>
+                    <!-- END CONTENT -->
+
+                </div>
+                <!-- END CONTAINER -->
+            </div>
+        </div>
+        <div class="page-wrapper-row">
+            <div class="page-wrapper-bottom">
+                <!-- BEGIN FOOTER -->
+                <!-- BEGIN PRE-FOOTER -->
+                <div class="page-prefooter">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                                <h2>@Resources.Resource.FooterAbout</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam dolore. </p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs12 footer-block">
+                                <h2>@Resources.Resource.FooterSubscribeEmail</h2>
+                                <div class="subscribe-form">
+                                    <div>
+                                        <div class="input-group">
+                                            <input type="text" placeholder="mail@email.com" class="form-control">
+                                            <span class="input-group-btn">
+                                                <button class="btn" type="submit">Submit</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                                <h2>@Resources.Resource.FooterFollowUs</h2>
+                                <ul class="social-icons"></ul>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                                <h2>@Resources.Resource.FooterContacts</h2>
+                                <address class="margin-bottom-40">
+                                    Phone: 800 123 3456
+                                    <br>
+                                    Email:
+                                    <a href="mailto:info@metronic.com">info@metronic.com</a>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PRE-FOOTER -->
+                <!-- BEGIN INNER FOOTER -->
+                <div class="page-footer">
+                    <div class="container-fluid">
+                        2017 &copy;  &nbsp;|&nbsp;
+                        <a target="_blank" href="#">Almohami</a>
+
+                    </div>
+                </div>
+                <div class="scroll-to-top">
+                    <i class="icon-arrow-up"></i>
+                </div>
+                <!-- END INNER FOOTER -->
+                <!-- END FOOTER -->
+            </div>
+        </div>
+    </div>
+    @*</form>*@
+    <!--[if lt IE 9]>
+    <script src="../../../assets/global/plugins/respond.min.js"></script>
+    <script src="../../../assets/global/plugins/excanvas.min.js"></script>
+    <script src="../../../assets/global/plugins/ie8.fix.min.js"></script>
+     <![endif]-->
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Content/Custom")
+    <script src="~/Scripts/datatables.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/datatables.bootstrap.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/ui-modals.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap-fileinput.js" type="text/javascript"></script>
+    <script src="~/Scripts/moment.min.js"></script>
+    @*<script src="~/Content/fullcalendar/fullcalendar.min.js"></script>*@
+    
+   
+    @Scripts.Render("~/Bundles/GlobalScripts")
+    
+    <script src="~/Content/Plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/Content/Plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+    <script src="~/Content/Plugins/clockface/js/clockface.js"></script>
+     
+    <script src="~/Scripts/table-datatables-managed.min.js" type="text/javascript"></script>
+    @*<script src="~/Scripts/components-select2.min.js" type="text/javascript"></script>*@       
+    <script src="~/Scripts/components-date-time-pickers.min.js"></script>   
+    @*<script src="~/Content/fullcalendar/lang-all.js"></script>*@    
+    <script src="~/Content/Plugins/loader/jquery.loader.js"></script>
+    <script src="~/Content/Plugins/bootstrap-growl/jquery.bootstrap-growl.js"></script>
+    <script src="~/Content/Plugins/bootstrap-growl/ui-bootstrap-growl.js"></script>
+    <script src="~/Scripts/custom.js"></script>
+    <script src="~/Scripts/jquery.dd.js"></script>
+    @*<script src="~/Scripts/dashboard.min.js"></script>*@
+    <script src="~/Content/layout3/scripts/layout.min.js"></script>
+    <script type="text/javascript">
+        var paramObject = {
+            UrlChangeCulture: '@Url.Content("~/Account/ChangeCurrentCulture")'
+        }
+
+        function changeCurrentCulture(culture) {
+
+            document.location = paramObject.UrlChangeCulture + "?culture=" + culture;
+            return true;
+        }
+        $('.nav a').on('click', function () {
+            $('.btn-navbar').click(); //bootstrap 2.x
+            $('.navbar-toggle').click() //bootstrap 3.x by Richard
+        });
+    </script>
+
+</body>
+
+</html>

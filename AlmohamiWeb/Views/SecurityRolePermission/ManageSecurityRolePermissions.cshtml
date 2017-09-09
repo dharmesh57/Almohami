@@ -1,0 +1,181 @@
+﻿@model Almohami.Services.Entities.SecurityRolePermissionEntityModel
+
+@{
+    //Layout = null;
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link href="~/Content/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/datatables/plugins/" rel="stylesheet" type="text/css" />
+
+<div class="page-content">
+    <div class="container">
+        <div class="page-content-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                    <div class="portlet light ">
+                        <div class="portlet-title">
+                            <div class="caption font-dark">
+                                <i class="icon-key font-dark"></i>
+                                <span class="caption-subject bold uppercase"> Role Permissions</span>
+                            </div>
+                            <div class="actions">
+                                <div class="btn-group btn-group-devided" data-toggle="buttons">
+                                    <label class="btn btn-transparent dark btn-outline btn-circle btn-sm active">
+                                        <input type="radio" name="options" class="toggle" id="option1">Actions
+                                    </label>
+                                    <label class="btn btn-transparent dark btn-outline btn-circle btn-sm">
+                                        <input type="radio" name="options" class="toggle" id="option2">Settings
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <div class="form-group">
+                                <label class="control-label bold"> Rolename:</label>
+                                <span class="control-label">@Model.RoleName</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label bold"> RoleDescription:</label>
+                                <span class="control-label">@Model.RoleDescription</span>
+                            </div>
+                           
+                                     
+
+                                        <table id="manageRoleList" class="table table-striped table-bordered table-hover table-checkable order-column table-responsive" cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>Module</th>
+                                                    <th>Full Control</th>
+                                                    <th>Add</th>
+                                                    <th>Edit</th>
+                                                    <th>View</th>
+                                                    <th>Delete</th>
+
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                @if (Model.RolePermissionList.Count() > 0)
+                                                {
+                                                    foreach (var roleItem in Model.RolePermissionList)
+                                                    {
+                                                        <tr>
+                                                            <td>
+                                                                @roleItem.Permissionname   <input type="hidden" id="hdnSecurityRolePermissionId" value="@roleItem.SecurityRolePermissionId">
+                                                                <input type="hidden" id="hdnSecurityRoleId" value="@roleItem.SecurityRoleId">
+                                                                <input type="hidden" id="hdnModuleId" value="@roleItem.ModuleId">
+                                                            </td>
+                                                            <td><input id="chkFullControl" type="checkbox" checked="@roleItem.IsFullControl" onclick="togelselectchange(this)"></td>
+                                                            <td><input id="chkCanAdd" type="checkbox" checked="@roleItem.CanAdd"></td>
+                                                            <td><input id="chkCanEdit" type="checkbox" checked="@roleItem.CanEdit"></td>
+                                                            <td><input id="chkCanView" type="checkbox" checked="@roleItem.CanView"></td>
+                                                            <td><input id="chkCanDelete" type="checkbox" checked="@roleItem.CanDelete"></td>
+
+                                                        </tr>
+                                                    }
+                                                }
+
+
+                                            </tbody>
+                                        </table>
+
+                                        <div>
+                                            <button class="btn btn-sm btn-success" type="button" onclick="SubmitPermission();"><i class="fa fa-dot-circle-o"></i> Submit</button>
+                                            <a class="btn btn-sm btn-danger" href="@Url.Action("Index", "SecurityRolePermission")"> Cancel</a>
+                                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        <script>
+                            $(document).ready(function () {
+                                var table = $('#manageRoleList').DataTable({
+                                    responsive: true
+                                });
+                                //debugger
+                                //if ($("#chkCanAdd").is(":checked") == true && $("#chkCanEdit").is(":checked") == true && $("#chkCanView").is(":checked") == true && $("#chkCanDelete").is(":checked") == true) {
+
+                                //    $("#chkFullControl").prop("checked", true);
+                                //}
+                                //else {
+                                //    $("#chkFullControl").prop("checked", false);
+                                //}
+                            });
+                            function togelselectchange(fullcheckbox) {
+                                if ($(fullcheckbox).is(":checked")) {
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanAdd").prop("checked", true);
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanEdit").prop("checked", true);
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanView").prop("checked", true);
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanDelete").prop("checked", true);
+
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanAdd").attr("disabled", true);
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanEdit").attr("disabled", true);
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanView").attr("disabled", true);
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanDelete").attr("disabled", true);
+
+                                }
+                                else {
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanAdd").prop("checked", false);
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanEdit").prop("checked", false);
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanView").prop("checked", false);
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanDelete").prop("checked", false);
+
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanAdd").removeAttr("disabled");
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanEdit").removeAttr("disabled");
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanView").removeAttr("disabled");
+                                    $(fullcheckbox).parent('td').parent('tr').find("#chkCanDelete").removeAttr("disabled");
+
+                                }
+                            }
+
+                            function SubmitPermission() {
+                                var SecurityRolesModel = {};
+                                var lstsecurityRolePermissions = [];
+                                $("#manageRoleList tbody tr").each(function () {
+                                    var SecurityRolePermission = {
+                                        "SecurityRolePermissionId": $(this).find("#hdnSecurityRolePermissionId").val(),
+                                        "SecurityRoleId": $(this).find("#hdnSecurityRoleId").val(),
+                                        "ModuleId": $(this).find("#hdnModuleId").val(),
+                                        "IsFullControl": $(this).find("#chkFullControl").is(":checked"),
+                                        "CanAdd": $(this).find("#chkCanAdd").is(":checked"),
+                                        "CanEdit": $(this).find("#chkCanEdit").is(":checked"),
+                                        "CanView": $(this).find("#chkCanView").is(":checked"),
+                                        "CanDelete": $(this).find("#chkCanDelete").is(":checked"),
+
+                                    }
+                                    SecurityRolesModel.securityRolePermission = SecurityRolePermission;
+                                    lstsecurityRolePermissions.push(SecurityRolesModel.securityRolePermission);
+                                });
+
+                                SecurityRolesModel.RolePermissionList = lstsecurityRolePermissions;
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: '/SecurityRolePermission/ManageSecurityRolePermissions',
+                                    data: SecurityRolesModel,
+                                    success: function (result) {
+
+                                        setTimeout(function () {
+                                            //window.location.href = "/SecurityRolePermission/Index";
+                                            window.location.reload();
+                                        }, 1000)
+                                    },
+                                    error: function (jqXHR) {
+                                        if (jqXHR.status === 200) {
+                                            alert("error");
+                                        }
+                                    }
+                                })
+                            }
+
+                        </script>
+

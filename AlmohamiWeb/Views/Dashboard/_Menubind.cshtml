@@ -1,0 +1,414 @@
+﻿@model Almohami.Services.Entities.DashboardModel
+
+<div class="hor-menu">
+    <ul class="nav navbar-nav">
+        @if (Model.vRolePermissionList.Count > 0)
+        {
+
+
+            foreach (var moduleitem in Model.vRolePermissionList.Where(model => model.IsSubMoudle == false))
+            {
+
+                <li aria-haspopup="true" class="menu-dropdown mega-menu-dropdown  mega-menu-full">
+                    <a href="@moduleitem.URL">
+                        <i class="@moduleitem.CssClass"></i>
+                        @moduleitem.Permissionname
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+            }
+            foreach (var item in Model.ParentModuleList)
+            {
+                <li aria-haspopup="true" class="menu-dropdown mega-menu-dropdown  mega-menu-full">
+                    <a href="@item.ParentModuleURL">
+                        <i class="@item.CssClass"></i>
+                        @item.ParentModuleName
+                        <span class="arrow"></span>
+                    </a>
+
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="mega-menu-content">
+                                <div class="row">
+
+                                    @foreach (var item1 in Model.vRolePermissionList.Where(model => model.ParentModuleId == item.ParentModuleId))
+                                    {
+                                        <div class="col-md-3">
+                                            <ul class="mega-menu-submenu">
+                                                <li>
+                                                    <a href="@item1.URL"><i class="@item1.CssClass"></i> @item1.Permissionname</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    }
+
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            }
+
+
+        }
+
+    </ul>
+</div>
+
+@*@if (Model.SecurityRoleId == 26)
+    {
+        <div class="hor-menu">
+            <ul class="nav navbar-nav">
+                <li aria-haspopup="true">
+                    <a href="/Dashboard/Index">
+                        <i class="fa fa-dashboard"></i>
+                        @Resources.Resource.MenuDashboard
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown mega-menu-dropdown mega-menu-full">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuCase
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="mega-menu-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="mega-menu-submenu">
+                                            <li class="col-md-3">
+                                                <a href="#">@Resources.Resource.MenuCreateCase</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">@Resources.Resource.MenuEditCase</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">@Resources.Resource.MenuViewCase</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">@Resources.Resource.MenuDeleteCase</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuDocuments
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuClients
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuCalender
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuFinance
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown mega-menu-dropdown mega-menu-full">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuRole
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="mega-menu-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="mega-menu-submenu">
+                                            <li class="col-md-3">
+                                                <a href="#">@Resources.Resource.MenuCreateRole</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">@Resources.Resource.MenuEditRole</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">@Resources.Resource.MenuViewCase</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">@Resources.Resource.MenuDeleteRole</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuManageUserAccessandSecurity
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuSubUser
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuReports
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    }
+    else if (Model.SecurityRoleId == 28)
+    {
+        <div class="hor-menu">
+            <ul class="nav navbar-nav">
+                <li aria-haspopup="true">
+                    <a href="/Dashboard/Index">
+                        <i class="fa fa-dashboard"></i>
+                        @Resources.Resource.MenuDashboard
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+
+
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuFinance
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown mega-menu-dropdown mega-menu-full">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuRole
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="mega-menu-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="mega-menu-submenu">
+                                            <li class="col-md-3">
+                                                <a href="#">@Resources.Resource.MenuCreateRole</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">@Resources.Resource.MenuEditRole</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">@Resources.Resource.MenuViewCase</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">@Resources.Resource.MenuDeleteRole</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuManageUserAccessandSecurity
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuMasterUser
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        @Resources.Resource.MenuReports
+
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    }
+    else if (Model.SecurityRoleId == 30)
+    {
+        <div class="hor-menu">
+            <ul class="nav navbar-nav">
+                <li aria-haspopup="true">
+                    <a href="/Dashboard/Index">
+                        <i class="fa fa-dashboard"></i>
+                        Dashboard
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown mega-menu-dropdown mega-menu-full">
+                    <a href="javascript:;">
+                        Cases
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="mega-menu-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="mega-menu-submenu">
+                                            <li class="col-md-3">
+                                                <a href="#">Create Case</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">Edit Case</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">View Case</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">Delete Case</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        Documents
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        Clients
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        Calender
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        Finance
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        Manage User Access&amp;Security
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+
+
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        Reports
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    }
+    else if (Model.SecurityRoleId == 32)
+    {
+        <div class="hor-menu">
+            <ul class="nav navbar-nav">
+                <li aria-haspopup="true">
+                    <a href="/Dashboard/Index">
+                        <i class="fa fa-dashboard"></i>
+                        Dashboard
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown mega-menu-dropdown mega-menu-full">
+                    <a href="javascript:;">
+                        Cases
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="mega-menu-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="mega-menu-submenu">
+                                            <li class="col-md-3">
+                                                <a href="#">Create Case</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">Edit Case</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">View Case</a>
+                                            </li>
+                                            <li class="col-md-3">
+                                                <a href="#">Delete Case</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        Documents
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        Clients
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        Calender
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        Finance
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+
+                <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                    <a href="javascript:;">
+                        Reports
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    }*@
+
+
+

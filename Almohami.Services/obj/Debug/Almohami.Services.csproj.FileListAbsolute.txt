@@ -1,0 +1,156 @@
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.dll
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.pdb
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.dll
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.dll
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.pdb
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.pdb
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Services\bin\Debug\AutoMapper.xml
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Services\bin\Debug\EntityFramework.xml
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Services\bin\Debug\EntityFramework.SqlServer.xml
+G:\Personal_Work\Ankita\MVC\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.pdb
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.pdb
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.pdb
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+C:\Users\DHAMS\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.pdb
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.pdb
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.pdb
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+C:\Users\ITAdmin\Downloads\AlmohamiWeb2407\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.dll
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.pdb
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.dll
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.dll
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.pdb
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.pdb
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+C:\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.resources
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csproj.GenerateResource.Cache
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\bin\Debug\ar\Almohami.Services.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.ar.resources
+C:\Users\DHAMS\Desktop\Almohami Backup\12082017\AlmohamiWeb_10_8\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\AlmohamiWeb\Almohami.Services\obj\Debug\ar\Almohami.Services.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.resources
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.ar.resources
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csproj.GenerateResource.Cache
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\ar\Almohami.Services.resources.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.dll
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.pdb
+C:\Users\Ankita-PC\Desktop\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\ar\Almohami.Services.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\ar\Almohami.Services.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.resources
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.ar.resources
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csproj.GenerateResource.Cache
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\ar\Almohami.Services.resources.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.resources
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.ar.resources
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csproj.GenerateResource.Cache
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWebAnkita_21_8\AlmohamiWeb2008\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\bin\Debug\ar\Almohami.Services.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.resources
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.ar.resources
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csproj.GenerateResource.Cache
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\obj\Debug\ar\Almohami.Services.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup-20170822T163117Z-001\AlmohamiBackup\AlmohamiWebAnkita_21_8_8\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\bin\Debug\ar\Almohami.Services.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.pdb
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.resources
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.ar.resources
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csproj.GenerateResource.Cache
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\obj\Debug\ar\Almohami.Services.resources.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+C:\Users\DHAMS\Desktop\Almohami Backup\220817\AlmohamiBackup\AlmohamiBackup\AlmohamiWeb21_8\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Services.pdb
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\bin\Debug\ar\Almohami.Services.resources.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Core.pdb
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\bin\Debug\Almohami.Data.pdb
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csprojResolveAssemblyReference.cache
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.resources
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.Resources.Resource.ar.resources
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.csproj.GenerateResource.Cache
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\obj\Debug\ar\Almohami.Services.resources.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.dll
+G:\Personal_Work\Ankita\MVC\Almohami Backup\Latest\AlmohamiWeb\Almohami.Services\obj\Debug\Almohami.Services.pdb

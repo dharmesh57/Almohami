@@ -1,0 +1,126 @@
+﻿@model Almohami.Services.Entities.LoginModel
+<!DOCTYPE html>
+
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title>User Panel | User Registration</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="User Account Page" name="description" />
+    <meta content="" name="author" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    @Styles.Render("~/Content/GlobalPlugins")
+    @Styles.Render("~/Content/GlobalCss")
+    <link href="~/Content/Plugins/loader/jquery.loader.css" rel="stylesheet" />
+    <link href="~/Content/custom.css" rel="stylesheet" />
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link href="~/Content/login.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="~/favicon.ico" />   
+</head>
+<!-- END HEAD -->
+
+<body class="login customloader">
+    <!-- BEGIN LOGO -->
+    <div class="logo">
+        <a href="index.html">
+            <img src="~/Content/Img/logo.jpg" alt="" />
+        </a>
+    </div>
+    <!-- END LOGO -->
+    <!-- BEGIN LOGIN -->
+    <div class="content">
+        <div class="row">
+            <div class="col-md-12">
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div id="successdiv" class="alert alert-success alert-dismissible note note-success">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                        <h4><i class="icon fa fa-thumbs-up"></i> success!</h4>
+                        <span id="successmes">  @TempData["SuccessMessage"]</span>
+
+                    </div>
+                }
+                else if (TempData["ErrorMessage"] != null)
+                {
+                    <div id="errordiv" class="alert alert-danger  alert-dismissible">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                        <h4><i class="icon fa fa-ban"></i>Error!</h4>
+                        <span id="errormes"> @TempData["ErrorMessage"] </span>
+
+                    </div>
+                }
+
+            </div>
+        </div>
+
+
+        
+        @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "login-form form-horizontal", @id = "formLogin", role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            <h3 class="form-title font-green">Login to your account</h3>
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                @Html.LabelFor(m => m.Email, new { @class = "control-label visible-ie8 visible-ie9" })
+                <div class="input-icon">
+                    <i class="fa fa-envelope"></i>
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control placeholder-no-fix", @placeholder = "Email Id" })
+                </div>
+                @Html.ValidationMessageFor(m => m.Email)
+
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password, new { @class = "control-label visible-ie8 visible-ie9" })
+                <div class="input-icon">
+                    <i class="fa fa-lock"></i>
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control placeholder-no-fix", @placeholder = "Password" })
+                </div>
+                @Html.ValidationMessageFor(m => m.Password)
+
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <div class="col-md-10" style="margin-right:30px">
+                        @Html.CheckBoxFor(m => m.RememberMe, new { @class = "rememberme check mt-checkbox mt-checkbox-outline" })
+                        @Html.LabelFor(m => m.RememberMe)
+                    </div>
+                    <div class="forget-password-block" style="margin-right:35px">
+                        @Html.ActionLink("Forgot your password?", "ForgotPassword", new { @class = "forget-password" })
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-actions">
+                <input type="reset" id="register-back-btn" class="btn blue btn-outline" value="Cancel" />
+                <button type="submit" id="LoginSubmit" class="btn green uppercase pull-right">Submit</button>
+            </div>
+            <div class="create-account">
+                <p>
+                    @Html.ActionLink("Create an account", "Registration", "/Account/Registration", new { @class = "uppercase" })
+
+                </p>
+            </div>
+        }
+
+        <!-- END REGISTRATION FORM -->
+    </div>
+
+
+    @Scripts.Render("~/Bundles/CorePlugins")
+    @Scripts.Render("~/Bundles/GlobalScripts")
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/login.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/custom.js"></script>
+    <script src="~/Content/Plugins/loader/jquery.loader.js"></script>
+    <script src="~/Content/Plugins/bootstrap-growl/jquery.bootstrap-growl.js"></script>
+    <script src="~/Content/Plugins/bootstrap-growl/ui-bootstrap-growl.js"></script>
+  
+</body>
+
+</html>

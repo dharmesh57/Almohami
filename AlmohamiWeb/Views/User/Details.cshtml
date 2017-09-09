@@ -1,0 +1,96 @@
+﻿@model Almohami.Services.Entities.UserEntityModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-container">
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <!-- BEGIN CONTENT BODY -->
+        <!-- BEGIN PAGE HEAD-->
+        <div class="page-head">
+            <div class="container">
+                <!-- BEGIN PAGE TITLE -->
+                <div class="page-title">
+                    <h1>
+                        User
+                        <small>Details</small>
+                    </h1>
+                </div>
+                <!-- END PAGE TITLE -->
+            </div>
+        </div>
+        <!-- END PAGE HEAD-->
+        <!-- BEGIN PAGE CONTENT BODY -->
+        <div class="page-content">
+            <div class="container">
+                <!-- BEGIN PAGE BREADCRUMBS -->
+                <h3 class="page-title">
+                    <i class="fa fa-user"></i> @if (Model.Name != null) 
+                    {
+                        @Model.Name
+                    } - User 
+                        <a href="@Url.Action("Edit", "User", new RouteValueDictionary ( new { id = Model.UserID } ))" class="page-title-action">
+                            <i class="fa fa-pencil"></i>
+                        </a>
+
+                </h3>
+
+                <!-- END PAGE BREADCRUMBS -->
+                <!-- BEGIN PAGE CONTENT INNER -->
+                <div class="page-content-inner">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- BEGIN SAMPLE FORM PORTLET-->
+                            <div class="portlet light ">                                
+                                <div class="portlet-body form">
+                                    <form role="form">
+                                        <div class="form-body">
+                                            <div class="panel panel-default padding-10">
+                                                <div class="row profile">
+                                                    <div class="col-md-12 profile-info">
+                                                        <div class="profile-picture pull-left">
+                                                            <div style="width: 200px; height: 150px;">
+                                                                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="profile-summary">
+
+                                                            <h1>
+                                                                <span class="label label-warning">Offline</span>
+                                                                @if (Model.Name != null)
+                                                                {
+                                                                    @Model.Name
+                                                                }
+                                                               
+                                                            </h1>
+                                                            <p>
+                                                            </p>
+                                                            <p><a href="mailto:@Model.Email">@Model.Email</a></p>
+                                                            <ul class="list-inline" style="margin-top:15px;">
+                                                                <li><i class="fa fa-calendar"></i>Last Seen: </li>
+                                                                <li><i class="fa fa-lock"></i>Security Role: <a data-toggle="single-page" href="Role/Details/id">@Model.RoleName </a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>                                            
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- END SAMPLE FORM PORTLET-->
+                          
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- END PAGE CONTENT INNER -->
+            </div>
+        </div>
+        <!-- END PAGE CONTENT BODY -->
+        <!-- END CONTENT BODY -->
+    </div>
+    <!-- END CONTENT -->   
+</div>
+

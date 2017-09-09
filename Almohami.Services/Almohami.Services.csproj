@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F2C639C-2E70-456B-BD3E-D73D0F589FDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Almohami.Services</RootNamespace>
+    <AssemblyName>Almohami.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="NetJSON, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NetJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contracts\IAccountLoginServices.cs" />
+    <Compile Include="Contracts\ICaseServices.cs" />
+    <Compile Include="Contracts\IClientService.cs" />
+    <Compile Include="Contracts\IDashboardService.cs" />
+    <Compile Include="Contracts\ISecurityRolePermissionService.cs" />
+    <Compile Include="Contracts\ISettingsService.cs" />
+    <Compile Include="Contracts\IUserServices.cs" />
+    <Compile Include="Entities\AppointmentCategoryEntityModel.cs" />
+    <Compile Include="Entities\AppointmentEntityModel.cs" />
+    <Compile Include="Entities\BaseViewModel.cs" />
+    <Compile Include="Entities\CaseAppealStatusEntityModel.cs" />
+    <Compile Include="Entities\CaseDiscriminationStatusEntityModel.cs" />
+    <Compile Include="Entities\CaseEntityModel.cs" />
+    <Compile Include="Entities\CasePrimaryStatusEntityModel.cs" />
+    <Compile Include="Entities\CaseTypeEntityModel.cs" />
+    <Compile Include="Entities\CaseUpdatesEntityModel.cs" />
+    <Compile Include="Entities\ClientEntityModel.cs" />
+    <Compile Include="Entities\CourtEntityModel.cs" />
+    <Compile Include="Entities\DashboardModel.cs" />
+    <Compile Include="Entities\ForgotPasswordEntityModel.cs" />
+    <Compile Include="Entities\LoginModel.cs" />
+    <Compile Include="Entities\RegisterModel.cs" />
+    <Compile Include="Entities\ResetPasswordEntityModel.cs" />
+    <Compile Include="Entities\SecurityRolePermissionEntityModel.cs" />
+    <Compile Include="Entities\UserEntityModel.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resource.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\AccountLoginServices.cs" />
+    <Compile Include="Services\CaseServices.cs" />
+    <Compile Include="Services\ClientService.cs" />
+    <Compile Include="Services\DashboardService.cs" />
+    <Compile Include="Services\SecurityRolePermissionService.cs" />
+    <Compile Include="Services\SettingsService.cs" />
+    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Validators\CustomValidators.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\Almohami.Services.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Almohami.Services.dll" />
+    <Content Include="obj\Debug\Almohami.Services.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Almohami.Core\Almohami.Core.csproj">
+      <Project>{204054b0-cc7f-4b31-9743-b73bfd58d105}</Project>
+      <Name>Almohami.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Almohami.Data\Almohami.Data.csproj">
+      <Project>{7e548f19-5367-4d4a-b726-16143cfdd060}</Project>
+      <Name>Almohami.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Resource.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

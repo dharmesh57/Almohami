@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+  
+                                        <table class="table table-striped table-hover">
+                                            <thead>
+                                                <tr style="background-color: #42A0D6; color: #fff;">
+                                                    <th colspan="2">Role Access Levels                            </th>
+                                                    <th colspan="4">Settings for this User's Contacts only</th>
+                                                </tr>
+                                                <tr style="background-color: #42A0D6; color: #fff;">
+                                                    <th>Menu </th>
+                                                    <th>Sub Menu</th>
+                                                    <th>Create</th>
+                                                    <th>View</th>
+                                                    <th>Edit</th>
+                                                    <th>Delete</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                   
+                                        <tr>
+                                            <td>
+                                               Menu Name
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                           
+                                        </tr>
+                                      
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                       submenu
+                                                    </td>
+                                           
+                                                <td>
+                                                    <div class="mt-checkbox-single">
+                                                        <input id="chkcreate" type="checkbox" value='<%# Eval("allow_add") %>' runat="server" />
+                                                    </div>
+                                                </td>
+                                                 <td>
+                                                    <div class="mt-checkbox-single">
+                                                        <input type="checkbox" id="chkview" value='<%# Eval("allow_view") %>' runat="server" />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="mt-checkbox-single">
+                                                        <input type="checkbox" id="chkedit" value='<%# Eval("allow_edit") %>' runat="server" />
+                                                    </div>
+                                                </td>                                               
+                                                <td>
+                                                    <div class="mt-checkbox-single">
+                                                        <input type="checkbox" id="chkdelete" value='<%#Eval("allow_delete") %>' runat="server" />
+                                                    </div>
+                                                </td>
+                                           
+                                        </tr>
+                                 
+                                        </tbody>
+                                </table>
+
+                                </body>
+</html>

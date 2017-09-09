@@ -1,0 +1,201 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- BEGIN PAGE HEAD-->
+<div class="page-head">
+    <div class="container">
+        <!-- BEGIN PAGE TITLE -->
+        <div class="page-title">
+            <h1>
+                <i class="fa fa-gears"></i>  Settings
+                <small>Personal & Company</small>
+            </h1>
+        </div>
+        <!-- END PAGE TITLE -->
+    </div>
+</div>
+
+<!-- END PAGE HEAD-->
+
+<div class="page-content">
+    <div class="container">
+
+        <div class="page-content-inner">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="settings-menu-column">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li class="active">
+                                <a href="#tab_6_1" data-toggle="tab">
+                                    <i class="fa fa-user"></i>
+                                    Personal Settings
+                                </a>
+                            </li>
+                            <li onclick="SecurityPasswordMethod()">
+                                <a href="#tab_6_2" data-toggle="tab">
+                                    <i class="fa fa-lock"></i>
+                                    Security & Password
+                                </a>
+                            </li>
+                            <li onclick="CompanyPreferencesMethod()">
+
+                                <a href="#tab_6_3" data-toggle="tab">
+                                    <i class="fa fa-group"></i>
+                                    Company Settings
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#tab_6_4" data-toggle="tab">
+                                    <i class="fa fa-info"></i>
+                                    Company Logo & Info
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab_6_5" data-toggle="tab">
+                                    <i class="fa fa-cog"></i>
+                                    Client Portal, Logo & Colors
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab_6_6" data-toggle="tab">
+                                    <i class="fa fa-edit"></i>
+                                    Custom Fields
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab_6_7" data-toggle="tab">
+                                    <i class="fa fa-trash-o"></i>
+                                    Recycle Bin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab_6_1">
+
+                        </div>
+                        <div class="tab-pane fade" id="tab_6_2">
+
+                        </div>
+                        <div class="tab-pane fade" id="tab_6_3">
+                            @Html.Partial("_CompanyPreferences")
+                        </div>
+                        <div class="tab-pane fade" id="tab_6_4">
+                            <p>
+                                Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland
+                                seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby
+                                sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/custom.js"></script>
+
+
+
+<script>
+
+    $(document).ready(function () {
+
+        $.ajax({
+            type: 'GET',
+            url: '/Settings/PersonalInfo',
+            success: function (data) {
+                $('div#tab_6_1').html(data);
+
+            }
+        });
+    });
+
+   
+
+    //var UpdatePersonalUrl = "/Settings/PersonalInfo";
+    //function UpdatePersonalMethod() {
+    //    debugger
+    //    var form = $("#UpdatePersonalInfoForm").serialize()
+        
+    //    //if (form.valid()) {
+    //    $.ajax({
+    //        type: 'POST',
+    //        url: UpdatePersonalUrl,
+    //        data: form,
+    //        datatype: "json",
+    //        async: false,
+    //        contenttype: 'application/json; charset=utf-8',
+    //        success: function (data) {
+
+    //            if (data.success) {
+    //                $("div#tab_6_1").html(data);
+    //                window.location.reload();
+    //            }
+
+    //        },
+    //        error: function () {
+
+    //        }
+    //    });
+    //    return false;
+    //}
+
+    function SecurityPasswordMethod() {
+        $.ajax({
+            type: 'GET',
+            url: '/Settings/ChangePassword',
+            success: function (data) {
+                $('div#tab_6_2').html(data);
+
+            }
+        });
+    }
+
+    var UpdateSecurityUrl = "/Settings/ChangePassword";
+    function UpdateSecurityMethod() {
+        var form = $("#UpdateSecurityForm").serialize()
+        
+        //if (form.valid()) {
+        $.ajax({
+            type: 'POST',
+            url: UpdateSecurityUrl,
+            data: form,
+            datatype: "json",
+            async: false,
+            contenttype: 'application/json; charset=utf-8',
+            success: function (data) {
+
+                if (data.success == true) {
+                    $("div#tab_6_2").html(data);
+                    toaster.success("Password changed successfully!!!");
+                    SecurityPasswordMethod();
+                    
+                } else {
+                    toaster.danger("Password is not changed successfully!!!");
+                }
+
+            },
+            error: function (xhr) {
+                GetValidationMsg(xhr);
+            }
+        });
+        return false;
+    }
+
+    function CompanyPreferencesMethod() {
+        $.ajax({
+            url: '/Settings/ChangePassword',
+            success: function (data) {
+                $('div#tab_6_3').html(data);
+            }
+        });
+    }
+
+</script>
+
+

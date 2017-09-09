@@ -1,0 +1,367 @@
+﻿@model Almohami.Services.Entities.UserEntityModel
+<link href="~/Content/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
+<div id="settingsPageContainer" style="margin-top: 30px;" class="col-md-8">
+    <script src="~/Scripts/bootstrap-fileinput.js"></script>
+    <div id="divPersonalInfo" class="form-horizontal">
+
+        @using (Html.BeginForm("PersonalInfo", "Settings", FormMethod.Post, new { @id = "addpersonalinfo", @class = "form-horizontal", @enctype = "multipart/form-data" }))
+        {
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(m => m.VerificationToken)
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-section-bordered">
+                        <h4 class="form-section">Personal Settings</h4>
+                        @*<input data-val="true" data-val-maxlength="The field MixpanelDistinctId must be a string or array type with a maximum length of '255'." data-val-maxlength-max="255" id="MixpanelDistinctId" name="MixpanelDistinctId" value="" type="hidden">*@
+
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Photo, new { @class = "control-label col-md-4" })
+                            <div class="col-md-8">
+
+                                @Html.HiddenFor(m => m.isAttachmentChanged)
+
+                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                    <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+                                    </div>
+                                    <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
+                                    <div>
+                                        <span class="btn default btn-file">
+                                            <span class="fileinput-new"> Select image </span>
+                                            <span class="fileinput-exists"> Change </span>
+                                            <input type="file" name="...">
+                                        </span>
+                                        <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput"> Remove </a>
+                                    </div>
+                                </div>
+
+                                @*<p id="pNoteSave" style="display: none" class="help-block">
+                                        <span class="label label-sm label-danger">Note:</span>
+                                        Your changes are not saved yet! Click "Save" at the bottom of the page.
+                                    </p>*@
+                            </div>
+                            <span class="field-validation-valid" data-valmsg-for="Photo" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="clearfix"></div>
+                        <script>
+                            $(function () {
+                                $(".fileupload").bind('change', fileUploadChanged);
+                                $(".fileupload").bind('clear', fileUploadChanged);
+                                $(".fileupload").bind('reset', fileUploadChanged);
+                            });
+
+                            function fileUploadChanged() {
+                                $("#isAttachmentChanged").val(true);
+
+                                if ($("#pNoteSave").length > 0) {
+                                    $("#pNoteSave").show();
+                                }
+                            }
+                        </script>
+                        @*<div class="form-group">
+                            <i class="fa fa-user"></i> @Html.LabelFor(m => m.Name, new { @class = "control-label col-md-4 col-xs-8 hidden-sm" })
+
+                            <div class="col-md-3  col-xs-5">
+                                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                            </div>
+                        </div>                      
+                        <div class="form-group">
+                            <label class="control-label col-md-4" for="Position" id="Position_label">
+                                Job Title                <i class="fa fa-question tooltips" data-original-title="If you use LEDES, this will be your timekeeper class." data-placement="bottom"></i>
+
+                            </label>
+
+                            <div class="col-md-8">
+                                <span style="width: 100%;" class="k-widget k-combobox k-header k-combobox-clearable"><span tabindex="-1" unselectable="on" class="k-dropdown-wrap k-state-default"><input name="Position_input" class="k-input" autocomplete="off" style="width: 100%;" title="" role="combobox" aria-expanded="false" tabindex="0" aria-disabled="false" aria-autocomplete="both" aria-owns="Position_listbox" aria-labelledby="Position_label" aria-busy="false" aria-activedescendant="df8a2a04-e1cf-488c-9247-7484b25732d4" type="text"><span unselectable="on" class="k-icon k-clear-value k-i-close k-hidden" title="clear" role="button" tabindex="-1"></span><span unselectable="on" class="k-select" aria-label="select" role="button" tabindex="-1" aria-controls="Position_listbox"><span class="k-icon k-i-arrow-60-down"></span></span></span><input data-val="true" data-val-maxlength="The field Job Title must be a string or array type with a maximum length of '50'." data-val-maxlength-max="50" data-val-notrequired="" id="Position" name="Position" style="width: 100%; display: none;" data-role="combobox" aria-disabled="false" type="text"></span>
+                                <script>
+                                    kendo.syncReady(function () { jQuery("#Position").kendoComboBox({ "dataSource": [{ "Text": "Adjuster", "Value": "ADJSTR" }, { "Text": "Adjustment", "Value": "ADJSMT" }, { "Text": "Analyst", "Value": "ANALST" }, { "Text": "Arbitrator", "Value": "ARBITR" }, { "Text": "Associate", "Value": "ASSOC" }, { "Text": "Associate Trainee", "Value": "TRANEE" }, { "Text": "Auditor", "Value": "AUDITR" }, { "Text": "Clerk or Secretary", "Value": "CLKSEC" }, { "Text": "Consultant", "Value": "CONSLT" }, { "Text": "Contract Attorney", "Value": "TEMPAT" }, { "Text": "Contract Other Staff", "Value": "TEMPOS" }, { "Text": "Costs Counsel", "Value": "CSTCNS" }, { "Text": "Court Reporter/Transcriptionist", "Value": "CTRPTR" }, { "Text": "Discovery Attorney", "Value": "DSCATT" }, { "Text": "Discovery Project Manager", "Value": "DSCPMG" }, { "Text": "Discovery Technician/Analyst - Junior", "Value": "DSCANJ" }, { "Text": "Document Coder", "Value": "DOCCDR" }, { "Text": "Document Reviewer - Attorney", "Value": "DOCRAT" }, { "Text": "Document Reviewer - Non-Attorney", "Value": "DOCRNA" }, { "Text": "Evidentiary Developer", "Value": "EVDEVL" }, { "Text": "Expert", "Value": "EXPERT" }, { "Text": "Forensic Analyst", "Value": "FORANL" }, { "Text": "High-Level Non-Lawyer Professional", "Value": "HLNLPF" }, { "Text": "Investigator/Private Investigator", "Value": "INVSTG" }, { "Text": "IP Service Provider", "Value": "IPSVPV" }, { "Text": "IP Agent", "Value": "IPAGNT" }, { "Text": "Legal Assistant", "Value": "LGLAST" }, { "Text": "Legal Intern", "Value": "LGLINT" }, { "Text": "Legal Project Manager", "Value": "LGPRMG" }, { "Text": "Librarian", "Value": "LIBRRN" }, { "Text": "Mediator", "Value": "MEDITR" }, { "Text": "Medical Records Reviewer (Non-Certified Specialist)", "Value": "MDRCRV" }, { "Text": "Of Counsel", "Value": "OFCOUN" }, { "Text": "Other", "Value": "NBOTHR" }, { "Text": "Paralegal", "Value": "PARALG" }, { "Text": "Partner", "Value": "PARTNR" }, { "Text": "Research Specialist/Researcher", "Value": "RSRCHR" }, { "Text": "Responsible Professional", "Value": "RSPROF" }, { "Text": "Secondee", "Value": "SECNDE" }, { "Text": "Service of Process Agent", "Value": "SPAGNT" }, { "Text": "Solution Designer", "Value": "SOLDSG" }, { "Text": "Staff Attorney", "Value": "STFATT" }, { "Text": "Staff Counsel/Attorney", "Value": "STFCNS" }, { "Text": "Third Party Administrator  ", "Value": "TPADMN" }, { "Text": "Trainer/Instructor/Educator", "Value": "TRAINR" }, { "Text": "Transfer Agent", "Value": "TRNFAG" }, { "Text": "Translator", "Value": "TRANSL" }, { "Text": "Videographer", "Value": "VIDOGR" }], "dataTextField": "Text", "filter": "contains", "ignoreCase": true, "dataValueField": "Value", "suggest": true }); });
+                                </script><span class="field-validation-valid" data-valmsg-for="Position" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="form-group" id="ControlGroupForMobile">
+
+                            <label class="control-label col-md-4" for="Mobile">
+                                Mobile
+                            </label>
+
+                            <div class="col-md-8">
+                                <div style="display:visible" id="divMobile">
+                                    <input class="form-control" data-val="true" data-val-maxlength="The field Mobile # must be a string or array type with a maximum length of '50'." data-val-maxlength-max="50" id="Mobile" name="Mobile" placeholder="" value="9638302724" type="text">                        <span class="field-validation-valid" data-valmsg-for="Mobile" data-valmsg-replace="true"></span>
+                                    <span class="help-block">May be used to send activity reminders. (US &amp; Canada Only)</span>
+                                </div>
+                                <div style="display:none" id="divMobilePlaceholder" onclick="hidePlaceholder(this);">
+                                    <p class="form-control-static form-control-placeholder">
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label class="control-label col-md-4" for="Email">
+                                Email                            <span class="required" aria-required="true">*</span>
+
+                            </label>
+
+                            <div class="col-md-8">
+                                <div style="display:visible" id="divEmail">
+                                    <input class="form-control" data-val="true" data-val-maxlength="The field Email Address must be a string or array type with a maximum length of '255'." data-val-maxlength-max="255" data-val-required="The Email Address field is required." id="Email" name="Email" onchange="this.value=this.value.trim()" placeholder="" style="width:100%" value="soniankitait.2011@ymail.com" type="text">                <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                    <span class="help-block">The email address is used by the user to sign into PracticePanther and must be unique.</span>
+                                </div>
+                                <div style="display:none" id="divEmailPlaceholder" onclick="hidePlaceholder(this);">
+                                    <p class="form-control-static form-control-placeholder">
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label class="control-label col-md-4" for="TimeZoneId" id="TimeZoneId_label">
+                                Time Zone
+                            </label>
+
+                            <div class="col-md-8">
+                                <span style="width: 100%;" title="" class="k-widget k-dropdown k-header" unselectable="on" role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="TimeZoneId_listbox" aria-labelledby="TimeZoneId_label" aria-disabled="false" aria-busy="false" aria-activedescendant="f0f3866a-7c46-4636-aa1a-4ec8bb3be0c8"><span unselectable="on" class="k-dropdown-wrap k-state-default"><span unselectable="on" class="k-input">(UTC-05:00) Eastern Time (US &amp; Canada)</span><span unselectable="on" class="k-select" aria-label="select"><span class="k-icon k-i-arrow-60-down"></span></span></span><input data-val="true" data-val-maxlength="The field Time Zone must be a string or array type with a maximum length of '50'." data-val-maxlength-max="50" id="TimeZoneId" name="TimeZoneId" style="width: 100%; display: none;" value="Eastern Standard Time" data-role="dropdownlist" type="text"></span>
+                                <script>
+                                    kendo.syncReady(function () { jQuery("#TimeZoneId").kendoDropDownList({ "dataSource": [{ "Text": "(UTC-12:00) International Date Line West", "Value": "Dateline Standard Time" }, { "Text": "(UTC-11:00) Coordinated Universal Time-11", "Value": "UTC-11" }, { "Text": "(UTC-10:00) Aleutian Islands", "Value": "Aleutian Standard Time" }, { "Text": "(UTC-10:00) Hawaii", "Value": "Hawaiian Standard Time" }, { "Text": "(UTC-09:30) Marquesas Islands", "Value": "Marquesas Standard Time" }, { "Text": "(UTC-09:00) Alaska", "Value": "Alaskan Standard Time" }, { "Text": "(UTC-09:00) Coordinated Universal Time-09", "Value": "UTC-09" }, { "Text": "(UTC-08:00) Baja California", "Value": "Pacific Standard Time (Mexico)" }, { "Text": "(UTC-08:00) Coordinated Universal Time-08", "Value": "UTC-08" }, { "Text": "(UTC-08:00) Pacific Time (US \u0026 Canada)", "Value": "Pacific Standard Time" }, { "Text": "(UTC-07:00) Arizona", "Value": "US Mountain Standard Time" }, { "Text": "(UTC-07:00) Chihuahua, La Paz, Mazatlan", "Value": "Mountain Standard Time (Mexico)" }, { "Text": "(UTC-07:00) Mountain Time (US \u0026 Canada)", "Value": "Mountain Standard Time" }, { "Text": "(UTC-06:00) Central America", "Value": "Central America Standard Time" }, { "Text": "(UTC-06:00) Central Time (US \u0026 Canada)", "Value": "Central Standard Time" }, { "Text": "(UTC-06:00) Easter Island", "Value": "Easter Island Standard Time" }, { "Text": "(UTC-06:00) Guadalajara, Mexico City, Monterrey", "Value": "Central Standard Time (Mexico)" }, { "Text": "(UTC-06:00) Saskatchewan", "Value": "Canada Central Standard Time" }, { "Text": "(UTC-05:00) Bogota, Lima, Quito, Rio Branco", "Value": "SA Pacific Standard Time" }, { "Text": "(UTC-05:00) Chetumal", "Value": "Eastern Standard Time (Mexico)" }, { "Text": "(UTC-05:00) Eastern Time (US \u0026 Canada)", "Value": "Eastern Standard Time" }, { "Text": "(UTC-05:00) Haiti", "Value": "Haiti Standard Time" }, { "Text": "(UTC-05:00) Havana", "Value": "Cuba Standard Time" }, { "Text": "(UTC-05:00) Indiana (East)", "Value": "US Eastern Standard Time" }, { "Text": "(UTC-04:00) Asuncion", "Value": "Paraguay Standard Time" }, { "Text": "(UTC-04:00) Atlantic Time (Canada)", "Value": "Atlantic Standard Time" }, { "Text": "(UTC-04:00) Caracas", "Value": "Venezuela Standard Time" }, { "Text": "(UTC-04:00) Cuiaba", "Value": "Central Brazilian Standard Time" }, { "Text": "(UTC-04:00) Georgetown, La Paz, Manaus, San Juan", "Value": "SA Western Standard Time" }, { "Text": "(UTC-04:00) Santiago", "Value": "Pacific SA Standard Time" }, { "Text": "(UTC-04:00) Turks and Caicos", "Value": "Turks And Caicos Standard Time" }, { "Text": "(UTC-03:30) Newfoundland", "Value": "Newfoundland Standard Time" }, { "Text": "(UTC-03:00) Araguaina", "Value": "Tocantins Standard Time" }, { "Text": "(UTC-03:00) Brasilia", "Value": "E. South America Standard Time" }, { "Text": "(UTC-03:00) Cayenne, Fortaleza", "Value": "SA Eastern Standard Time" }, { "Text": "(UTC-03:00) City of Buenos Aires", "Value": "Argentina Standard Time" }, { "Text": "(UTC-03:00) Greenland", "Value": "Greenland Standard Time" }, { "Text": "(UTC-03:00) Montevideo", "Value": "Montevideo Standard Time" }, { "Text": "(UTC-03:00) Punta Arenas", "Value": "Magallanes Standard Time" }, { "Text": "(UTC-03:00) Saint Pierre and Miquelon", "Value": "Saint Pierre Standard Time" }, { "Text": "(UTC-03:00) Salvador", "Value": "Bahia Standard Time" }, { "Text": "(UTC-02:00) Coordinated Universal Time-02", "Value": "UTC-02" }, { "Text": "(UTC-02:00) Mid-Atlantic - Old", "Value": "Mid-Atlantic Standard Time" }, { "Text": "(UTC-01:00) Azores", "Value": "Azores Standard Time" }, { "Text": "(UTC-01:00) Cabo Verde Is.", "Value": "Cape Verde Standard Time" }, { "Text": "(UTC) Coordinated Universal Time", "Value": "UTC" }, { "Text": "(UTC+00:00) Casablanca", "Value": "Morocco Standard Time" }, { "Text": "(UTC+00:00) Dublin, Edinburgh, Lisbon, London", "Value": "GMT Standard Time" }, { "Text": "(UTC+00:00) Monrovia, Reykjavik", "Value": "Greenwich Standard Time" }, { "Text": "(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna", "Value": "W. Europe Standard Time" }, { "Text": "(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague", "Value": "Central Europe Standard Time" }, { "Text": "(UTC+01:00) Brussels, Copenhagen, Madrid, Paris", "Value": "Romance Standard Time" }, { "Text": "(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb", "Value": "Central European Standard Time" }, { "Text": "(UTC+01:00) West Central Africa", "Value": "W. Central Africa Standard Time" }, { "Text": "(UTC+01:00) Windhoek", "Value": "Namibia Standard Time" }, { "Text": "(UTC+02:00) Amman", "Value": "Jordan Standard Time" }, { "Text": "(UTC+02:00) Athens, Bucharest", "Value": "GTB Standard Time" }, { "Text": "(UTC+02:00) Beirut", "Value": "Middle East Standard Time" }, { "Text": "(UTC+02:00) Cairo", "Value": "Egypt Standard Time" }, { "Text": "(UTC+02:00) Chisinau", "Value": "E. Europe Standard Time" }, { "Text": "(UTC+02:00) Damascus", "Value": "Syria Standard Time" }, { "Text": "(UTC+02:00) Gaza, Hebron", "Value": "West Bank Standard Time" }, { "Text": "(UTC+02:00) Harare, Pretoria", "Value": "South Africa Standard Time" }, { "Text": "(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius", "Value": "FLE Standard Time" }, { "Text": "(UTC+02:00) Jerusalem", "Value": "Israel Standard Time" }, { "Text": "(UTC+02:00) Kaliningrad", "Value": "Kaliningrad Standard Time" }, { "Text": "(UTC+02:00) Tripoli", "Value": "Libya Standard Time" }, { "Text": "(UTC+03:00) Baghdad", "Value": "Arabic Standard Time" }, { "Text": "(UTC+03:00) Istanbul", "Value": "Turkey Standard Time" }, { "Text": "(UTC+03:00) Kuwait, Riyadh", "Value": "Arab Standard Time" }, { "Text": "(UTC+03:00) Minsk", "Value": "Belarus Standard Time" }, { "Text": "(UTC+03:00) Moscow, St. Petersburg, Volgograd", "Value": "Russian Standard Time" }, { "Text": "(UTC+03:00) Nairobi", "Value": "E. Africa Standard Time" }, { "Text": "(UTC+03:30) Tehran", "Value": "Iran Standard Time" }, { "Text": "(UTC+04:00) Abu Dhabi, Muscat", "Value": "Arabian Standard Time" }, { "Text": "(UTC+04:00) Astrakhan, Ulyanovsk", "Value": "Astrakhan Standard Time" }, { "Text": "(UTC+04:00) Baku", "Value": "Azerbaijan Standard Time" }, { "Text": "(UTC+04:00) Izhevsk, Samara", "Value": "Russia Time Zone 3" }, { "Text": "(UTC+04:00) Port Louis", "Value": "Mauritius Standard Time" }, { "Text": "(UTC+04:00) Saratov", "Value": "Saratov Standard Time" }, { "Text": "(UTC+04:00) Tbilisi", "Value": "Georgian Standard Time" }, { "Text": "(UTC+04:00) Yerevan", "Value": "Caucasus Standard Time" }, { "Text": "(UTC+04:30) Kabul", "Value": "Afghanistan Standard Time" }, { "Text": "(UTC+05:00) Ashgabat, Tashkent", "Value": "West Asia Standard Time" }, { "Text": "(UTC+05:00) Ekaterinburg", "Value": "Ekaterinburg Standard Time" }, { "Text": "(UTC+05:00) Islamabad, Karachi", "Value": "Pakistan Standard Time" }, { "Text": "(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi", "Value": "India Standard Time" }, { "Text": "(UTC+05:30) Sri Jayawardenepura", "Value": "Sri Lanka Standard Time" }, { "Text": "(UTC+05:45) Kathmandu", "Value": "Nepal Standard Time" }, { "Text": "(UTC+06:00) Astana", "Value": "Central Asia Standard Time" }, { "Text": "(UTC+06:00) Dhaka", "Value": "Bangladesh Standard Time" }, { "Text": "(UTC+06:00) Omsk", "Value": "Omsk Standard Time" }, { "Text": "(UTC+06:30) Yangon (Rangoon)", "Value": "Myanmar Standard Time" }, { "Text": "(UTC+07:00) Bangkok, Hanoi, Jakarta", "Value": "SE Asia Standard Time" }, { "Text": "(UTC+07:00) Barnaul, Gorno-Altaysk", "Value": "Altai Standard Time" }, { "Text": "(UTC+07:00) Hovd", "Value": "W. Mongolia Standard Time" }, { "Text": "(UTC+07:00) Krasnoyarsk", "Value": "North Asia Standard Time" }, { "Text": "(UTC+07:00) Novosibirsk", "Value": "N. Central Asia Standard Time" }, { "Text": "(UTC+07:00) Tomsk", "Value": "Tomsk Standard Time" }, { "Text": "(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi", "Value": "China Standard Time" }, { "Text": "(UTC+08:00) Irkutsk", "Value": "North Asia East Standard Time" }, { "Text": "(UTC+08:00) Kuala Lumpur, Singapore", "Value": "Singapore Standard Time" }, { "Text": "(UTC+08:00) Perth", "Value": "W. Australia Standard Time" }, { "Text": "(UTC+08:00) Taipei", "Value": "Taipei Standard Time" }, { "Text": "(UTC+08:00) Ulaanbaatar", "Value": "Ulaanbaatar Standard Time" }, { "Text": "(UTC+08:30) Pyongyang", "Value": "North Korea Standard Time" }, { "Text": "(UTC+08:45) Eucla", "Value": "Aus Central W. Standard Time" }, { "Text": "(UTC+09:00) Chita", "Value": "Transbaikal Standard Time" }, { "Text": "(UTC+09:00) Osaka, Sapporo, Tokyo", "Value": "Tokyo Standard Time" }, { "Text": "(UTC+09:00) Seoul", "Value": "Korea Standard Time" }, { "Text": "(UTC+09:00) Yakutsk", "Value": "Yakutsk Standard Time" }, { "Text": "(UTC+09:30) Adelaide", "Value": "Cen. Australia Standard Time" }, { "Text": "(UTC+09:30) Darwin", "Value": "AUS Central Standard Time" }, { "Text": "(UTC+10:00) Brisbane", "Value": "E. Australia Standard Time" }, { "Text": "(UTC+10:00) Canberra, Melbourne, Sydney", "Value": "AUS Eastern Standard Time" }, { "Text": "(UTC+10:00) Guam, Port Moresby", "Value": "West Pacific Standard Time" }, { "Text": "(UTC+10:00) Hobart", "Value": "Tasmania Standard Time" }, { "Text": "(UTC+10:00) Vladivostok", "Value": "Vladivostok Standard Time" }, { "Text": "(UTC+10:30) Lord Howe Island", "Value": "Lord Howe Standard Time" }, { "Text": "(UTC+11:00) Bougainville Island", "Value": "Bougainville Standard Time" }, { "Text": "(UTC+11:00) Chokurdakh", "Value": "Russia Time Zone 10" }, { "Text": "(UTC+11:00) Magadan", "Value": "Magadan Standard Time" }, { "Text": "(UTC+11:00) Norfolk Island", "Value": "Norfolk Standard Time" }, { "Text": "(UTC+11:00) Sakhalin", "Value": "Sakhalin Standard Time" }, { "Text": "(UTC+11:00) Solomon Is., New Caledonia", "Value": "Central Pacific Standard Time" }, { "Text": "(UTC+12:00) Anadyr, Petropavlovsk-Kamchatsky", "Value": "Russia Time Zone 11" }, { "Text": "(UTC+12:00) Auckland, Wellington", "Value": "New Zealand Standard Time" }, { "Text": "(UTC+12:00) Coordinated Universal Time+12", "Value": "UTC+12" }, { "Text": "(UTC+12:00) Fiji", "Value": "Fiji Standard Time" }, { "Text": "(UTC+12:00) Petropavlovsk-Kamchatsky - Old", "Value": "Kamchatka Standard Time" }, { "Text": "(UTC+12:45) Chatham Islands", "Value": "Chatham Islands Standard Time" }, { "Text": "(UTC+13:00) Coordinated Universal Time+13", "Value": "UTC+13" }, { "Text": "(UTC+13:00) Nuku\u0027alofa", "Value": "Tonga Standard Time" }, { "Text": "(UTC+13:00) Samoa", "Value": "Samoa Standard Time" }, { "Text": "(UTC+14:00) Kiritimati Island", "Value": "Line Islands Standard Time" }], "dataTextField": "Text", "dataValueField": "Value" }); });
+                                </script><span class="field-validation-valid" data-valmsg-for="TimeZoneId" data-valmsg-replace="true"></span>                <span class="help-block">Each user can have their own time zone. All dates in the system will be adjusted accordingly.</span>
+                            </div>
+                        </div>*@
+                       </div>
+                    @*<div class="form-section-bordered">
+                        <h4 class="form-section">Contact Info</h4>
+
+
+
+                        <div class="form-group" id="ControlGroupForHome">
+
+                            <label class="control-label col-md-4" for="Home">
+                                Home
+                            </label>
+
+                            <div class="col-md-8">
+                                <div style="display:visible" id="divHome">
+                                    <input class="form-control" data-val="true" data-val-maxlength="The field Home # must be a string or array type with a maximum length of '50'." data-val-maxlength-max="50" id="Home" name="Home" placeholder="" value="" type="text">                        <span class="field-validation-valid" data-valmsg-for="Home" data-valmsg-replace="true"></span>
+                                </div>
+                                <div style="display:none" id="divHomePlaceholder" onclick="hidePlaceholder(this);">
+                                    <p class="form-control-static form-control-placeholder">
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <input displayname="Fax" data-val="true" data-val-maxlength="The field Fax # must be a string or array type with a maximum length of '50'." data-val-maxlength-max="50" id="Fax" name="Fax" value="" type="hidden">
+
+                        <div class="form-group" id="ControlGroupForOffice">
+
+                            <label class="control-label col-md-4" for="Office">
+                                Office
+                            </label>
+
+                            <div class="col-md-8">
+                                <div style="display:visible" id="divOffice">
+                                    <input class="form-control" data-val="true" data-val-maxlength="The field Work # must be a string or array type with a maximum length of '50'." data-val-maxlength-max="50" id="Office" name="Office" placeholder="" value="9638302724" type="text">                        <span class="field-validation-valid" data-valmsg-for="Office" data-valmsg-replace="true"></span>
+                                </div>
+                                <div style="display:none" id="divOfficePlaceholder" onclick="hidePlaceholder(this);">
+                                    <p class="form-control-static form-control-placeholder">
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <input displayname="Extension" data-val="true" data-val-maxlength="The field Work Extension # must be a string or array type with a maximum length of '10'." data-val-maxlength-max="10" id="Ext" name="Ext" value="" type="hidden">
+                    </div>
+                    <div class="form-section-bordered">
+                        <h4 class="form-section">Time Entries</h4>
+
+
+                        <div class="form-group">
+
+                            <label class="control-label col-md-4" for="HourlyRate">
+                                Hourly Rate            <span class="currency-code grey" id="label-currency">(USD)</span>
+                                <span class="required" aria-required="true">*</span>
+
+                            </label>
+
+                            <div class="col-md-8">
+                                <span style="width: 100%;" class="k-widget k-numerictextbox"><span class="k-numeric-wrap k-state-default"><input class="k-formatted-value k-input" title="0.00" tabindex="0" style="display: inline;" placeholder="Enter Amount..." role="spinbutton" aria-valuemin="0" aria-valuemax="2147483647" aria-valuenow="0" aria-disabled="false" type="text"><input data-val="true" data-val-number="The field Hourly Rate must be a number." data-val-range="The field Hourly Rate must be between 0 and 2147483647." data-val-range-max="2147483647" data-val-range-min="0" data-val-required="The Hourly Rate field is required." id="HourlyRate" max="2147483647" min="0" name="HourlyRate" style="display: none;" value="0.00" data-role="numerictextbox" role="spinbutton" aria-valuemin="0" aria-valuemax="2147483647" class="k-input" aria-valuenow="0" aria-disabled="false" type="text"><span class="k-icon k-i-warning" style="display: none;"></span><span class="k-select"><span unselectable="on" class="k-link k-link-increase" aria-label="Increase value" title="Increase value"><span unselectable="on" class="k-icon k-i-arrow-60-up"></span></span><span unselectable="on" class="k-link k-link-decrease" aria-label="Decrease value" title="Decrease value"><span unselectable="on" class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
+                                <script>
+                                    kendo.syncReady(function () { jQuery("#HourlyRate").kendoNumericTextBox({ "placeholder": "Enter Amount..." }); });
+                                </script><span class="field-validation-valid" data-valmsg-for="HourlyRate" data-valmsg-replace="true"></span>                <span class="help-block">The amount you charge per hour when billing for your time. Each user can have their own different rates.</span>
+                                <span style="display:none" id="spanHourlyRate" class="help-block"></span>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="form-group" id="ControlGroupForTimeEntries_IsRoundingEnabled">
+
+
+                            <label class="control-label col-md-4" for="TimeEntries_IsRoundingEnabled">
+                                Round time entries?
+                            </label>
+
+                            <div class="col-md-8">
+                                <div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-id-TimeEntries_IsRoundingEnabled bootstrap-switch-animate" style="width: 67.4667px;"><div class="bootstrap-switch-container" style="width: 99px; margin-left: -33px;"><span class="bootstrap-switch-handle-on bootstrap-switch-primary" style="width: 33px;">Yes</span><span class="bootstrap-switch-label" style="width: 33px;">&nbsp;</span><span class="bootstrap-switch-handle-off bootstrap-switch-default" style="width: 33px;">No</span><input class="make-switch switch-small" data-val="true" data-val-required="The Round time entries? field is required." id="TimeEntries_IsRoundingEnabled" name="TimeEntries_IsRoundingEnabled" value="true" type="checkbox"></div></div><input name="TimeEntries_IsRoundingEnabled" value="false" type="hidden">
+                            </div>
+                        </div>
+                        <script>
+                            $(function () { $('.make-switch').bootstrapSwitch({ onText: "Yes", offText: "No" }); });
+                        </script>
+                        <div id="divTimeEntriesRounding" style="display:none">
+                            <div class="form-group">
+                                <label class="control-label col-xs-4">
+                                </label>
+                                <div class="col-xs-8">
+                                    <p class="form-control-static">
+                                        Round time entries
+                                        <span style="width: 80px;" title="" class="k-widget k-dropdown k-header" unselectable="on" role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="TimeEntries_RoundDirection_listbox" aria-disabled="false" aria-busy="false" aria-activedescendant="dae0d6b2-96a5-40a9-abd8-a8e9c56dd4de"><span unselectable="on" class="k-dropdown-wrap k-state-default"><span unselectable="on" class="k-input">Up</span><span unselectable="on" class="k-select" aria-label="select"><span class="k-icon k-i-arrow-60-down"></span></span></span><input data-val="true" data-val-required="The TimeEntries_RoundDirection field is required." id="TimeEntries_RoundDirection" name="TimeEntries_RoundDirection" style="width: 80px; display: none;" value="Up" data-role="dropdownlist" type="text"></span>
+                                        <script>
+                                            kendo.syncReady(function () { jQuery("#TimeEntries_RoundDirection").kendoDropDownList({ "dataSource": [{ "Text": "Down", "Value": "Down" }, { "Text": "Up", "Value": "Up" }], "dataTextField": "Text", "dataValueField": "Value" }); });
+                                        </script><span class="field-validation-valid" data-valmsg-for="TimeEntries_RoundDirection" data-valmsg-replace="true"></span> to the nearest
+
+                                        <span style="width: 100px;" class="k-widget k-numerictextbox"><span class="k-numeric-wrap k-state-default"><input class="k-formatted-value k-input" title="0.00" tabindex="0" style="display: inline;" placeholder="Add number..." role="spinbutton" aria-valuenow="0" aria-disabled="false" type="text"><input data-val="true" data-val-number="The field TimeEntries_RoundToNearest must be a number." data-val-required="The TimeEntries_RoundToNearest field is required." id="TimeEntries_RoundToNearest" name="TimeEntries_RoundToNearest" style="display: none;" value="0.00" data-role="numerictextbox" role="spinbutton" class="k-input" aria-valuenow="0" aria-disabled="false" type="text"><span class="k-icon k-i-warning" style="display: none;"></span><span class="k-select"><span unselectable="on" class="k-link k-link-increase" aria-label="Increase value" title="Increase value"><span unselectable="on" class="k-icon k-i-arrow-60-up"></span></span><span unselectable="on" class="k-link k-link-decrease" aria-label="Decrease value" title="Decrease value"><span unselectable="on" class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
+                                        <script>
+                                            kendo.syncReady(function () { jQuery("#TimeEntries_RoundToNearest").kendoNumericTextBox({ "placeholder": "Add number..." }); });
+                                        </script><span class="field-validation-valid" data-valmsg-for="TimeEntries_RoundToNearest" data-valmsg-replace="true"></span> fraction of the hour.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-section-bordered">
+                        <h4 id="notifications" class="form-section">Notification Emails</h4>
+
+                        <input data-val="true" data-val-required="The Receive activity emails? field is required." id="IsReceiveActivityEmails" name="IsReceiveActivityEmails" value="True" type="hidden">
+
+
+
+
+                        <div class="form-group" id="ControlGroupForIsReceiveDailyAgendaEmail">
+
+
+                            <label class="control-label col-md-4" for="IsReceiveDailyAgendaEmail">
+                                Receive daily agenda email?                <i class="fa fa-question tooltips" data-original-title="If you wish to stop receiving daily agenda emails with your tasks and events for the day, select NO" data-placement="bottom"></i>
+
+                            </label>
+
+                            <div class="col-md-8">
+                                <div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-on bootstrap-switch-id-IsReceiveDailyAgendaEmail bootstrap-switch-animate" style="width: 67.4667px;"><div class="bootstrap-switch-container" style="width: 99px; margin-left: 0px;"><span class="bootstrap-switch-handle-on bootstrap-switch-primary" style="width: 33px;">Yes</span><span class="bootstrap-switch-label" style="width: 33px;">&nbsp;</span><span class="bootstrap-switch-handle-off bootstrap-switch-default" style="width: 33px;">No</span><input checked="checked" class="make-switch switch-small" data-val="true" data-val-required="The Receive daily agenda email? field is required." id="IsReceiveDailyAgendaEmail" name="IsReceiveDailyAgendaEmail" value="true" type="checkbox"></div></div><input name="IsReceiveDailyAgendaEmail" value="false" type="hidden">
+                            </div>
+                        </div>
+                        <script>
+                            $(function () { $('.make-switch').bootstrapSwitch({ onText: "Yes", offText: "No" }); });
+                        </script>                    <input data-val="true" data-val-required="The Receive weekly business summary? field is required." id="IsReceiveWeeklySummaryEmail" name="IsReceiveWeeklySummaryEmail" value="True" type="hidden">
+
+                    </div>*@
+
+
+                </div>
+            </div>
+            <div class="space10"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="">
+                        <div class="form-actions hidden-print">
+                            <input id="isSaveAndNew" name="isSaveAndNew" value="false" type="hidden">
+                            <img class="loadingImg loadingImgFormAction" src="/Content/images/loading-image.gif" style="display: none">
+                            <button id="btnSubmit" type="submit" data-loading-text="Saving..." class="btn green loading-btn" onclick="submitForm(this);"><i class="fa fa-check "></i> Save</button>
+                            <a href="https://app.practicepanther.com/Settings/PersonalInfo?isSinglePage=true&amp;_=1500392886762" class="btn btn-default cancel-btn"><i class="fa fa-times"></i> Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @*<script>
+                function submitReset(formName) {
+                    $("#" + formName).submit();
+                }
+
+                function saveAndNew(item) {
+                    $("#isSaveAndNew").val(true);
+                    submitForm(item);
+                }
+
+                function submitForm(item) {
+                    var btn = $('.loading-btn'); //$(this);
+                    var cancelBtn = $('.cancel-btn');
+                    var loadingImg = $(".loadingImgFormAction");
+                    if ($(item).closest("form").valid()) {
+                        btn.hide();
+                        cancelBtn.hide();
+                        loadingImg.show();
+                        App.blockUI({
+                            boxed: false,
+                            message: 'Please wait...'
+                        });
+                        setTimeout(function () {
+                            btn.button('reset');
+                            cancelBtn.show();
+                            loadingImg.hide();
+                            btn.show();
+                            App.unblockUI();
+                        }, (120000));
+
+                        window.onbeforeunload = null;
+                        //this.form.submit();
+                        if (typeof setConfirmUnload == 'function') {
+                            setConfirmUnload(false);
+                        }
+
+                        $(item).closest("form").submit();
+                        //item.preventDefault();
+                    }
+                    //if (event &amp;&amp; event.preventDefault) event.preventDefault();
+                    //if (event &amp;&amp; event.returnValue) event.returnValue = false;
+
+
+                    return false;
+                }
+
+                ////block ENTER key
+                //$(document).ready(function () {
+                //    $(window).keydown(function (event) {
+                //        if (event.keyCode == 13) {
+                //            event.preventDefault();
+                //            return false;
+                //        }
+                //    });
+
+
+                //});
+
+            </script>*@
+        }
+    </div>
+    @*<script>
+        $(function () {
+            $('#TimeEntries_IsRoundingEnabled').on('switchChange.bootstrapSwitch', function (event, state) {
+                IsRoundingChanged();
+            });
+            IsRoundingChanged();
+        });
+
+
+        function IsRoundingChanged(data) {
+            var isRoundingChanged = $("#TimeEntries_IsRoundingEnabled").bootstrapSwitch('state');
+            if (isRoundingChanged) {
+                $("#divTimeEntriesRounding").show();
+            } else {
+                $("#divTimeEntriesRounding").hide();
+            }
+        }
+    </script>*@
+    @Scripts.Render("~/bundles/jqueryval")
+</div>

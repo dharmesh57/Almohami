@@ -1,0 +1,6 @@
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Release\Almohami.Core.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Release\Almohami.Core.pdb
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Core\bin\Release\Newtonsoft.Json.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Release\Almohami.Core.csprojResolveAssemblyReference.cache
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Release\Almohami.Core.dll
+C:\Users\ITAdmin\Desktop\AlmohamiWeb\AlmohamiWeb\Almohami.Core\obj\Release\Almohami.Core.pdb
